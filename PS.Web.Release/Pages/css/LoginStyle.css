@@ -1,0 +1,248 @@
+﻿.ipt-c {
+    margin-left: 0px;
+    margin-left: -4px;
+}
+
+.page, .header, .content, .footer {
+    margin: auto;
+}
+
+.txt-impt {
+    color: #D90000;
+}
+
+.txt-info {
+    color: #636466;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* ========================================================================================
+   Reset End */
+.clear {
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.a {
+    color: #0E7445;
+}
+
+.header {
+    height: 55px;
+    border-bottom: #D2D2D2 1px solid;
+    width: 800px;
+    text-align: left;
+}
+
+    .header .logo {
+        margin-top: 15px;
+        float: left;
+    }
+
+    .header .ext-link {
+        float: right;
+        margin-top: 25px;
+        color: #9C9C9C;
+        margin-left: 8px;
+    }
+
+.main {
+    height: 435px;
+    width: 800px;
+    margin: 0px auto;
+    text-align: left;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+    .main h2 {
+        display: block;
+        width: 360px;
+        height: 60px;
+        background-color: #FFFDE6;
+        border: #ECECEC 1px solid;
+        overflow: hidden;
+        line-height: 60px;
+        white-space: nowrap;
+        text-indent: 63px;
+        color: #000;
+        font-size: 16px;
+        background-position: -325px 13px;
+        margin-left: 8px;
+        margin-top: 77px;
+        float: left;
+        _display: inline;
+    }
+
+    .main .maybe {
+        width: 355px;
+        height: auto;
+        font-size: 12px;
+        position: absolute;
+        top: 160px;
+        line-height: 180%;
+        left: 30px;        
+    }
+
+    .main .maybe {
+    }
+
+    .main .maybe {
+        position: relative;
+        margin: 13px 0px 0px 20px;
+    }
+
+    .main .maybe {
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        top: -2px;
+    }
+
+        .main .maybe .btn {
+            width: 80px;
+            height: 24px;
+            border: 0px;
+            padding: 0px;
+            margin: 8px 0px;
+            background-color: #FFF;
+            background-position: 0px -58px;
+            cursor: pointer;
+        }
+
+.Larea {
+    width: 377px;
+    height: 319px;
+    background-position: 0px -113px;
+    position: absolute;
+    right: 25px;
+    top: 47px;
+}
+
+.Larea {
+    display: block;
+    width: 290px;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 26px;
+    white-space: nowrap;
+    text-indent: 400px;
+    overflow: hidden;
+}
+
+    .Larea .err {
+        color: #DD2026;
+        text-align: left;
+        position: absolute;
+        left: 80px;
+        top: 65px;
+    }
+
+.table-main {
+    margin: 5px;
+}
+
+.table-main {
+    font-weight: normal;
+    width: 75px;
+    text-align: right;
+    padding-right: 7px;
+}
+
+.table-main {
+    text-align: right;
+    padding: 2px;
+}
+
+    .table-main .ipt {        
+        font-weight:bold;
+        padding: 4px 3px;
+        font-size: 12px;        
+        border: #6C91AC 1px solid;
+        background-color: #FFF;
+    }
+
+    .table-main .ipt_disabled {        
+        padding: 4px 3px;
+        font-size: 14px;        
+        border: #6C91AC 1px solid;
+        background-color: #999999;
+    }
+
+    .table-main .ipt-focus 
+    {        
+        font-weight:bold;        
+        padding: 4px 3px;
+        font-size: 12px;        
+        border: #6C91AC 1px solid;
+        background-color: #FEFBBD;
+    }
+
+    .table-main strong {
+        font-size: 14px;
+    }
+
+    .table-main select {
+        font-size: 14px;
+        width: 188px;
+        text-align: left;
+    }
+
+    .table-main .AWauto {
+        display: -moz-inline-box;
+        -moz-box-align: center;
+        display: inline-block;
+        display:inline;        
+        vertical-align: middle;
+        width: 16px;
+        height: 14px;
+        overflow: hidden;
+        background-position: -109px -1px;
+        margin-right: 10px;
+    }
+
+    .table-main .btn 
+    {
+        width:100px;
+        margin:2px 2px 2px 2px;
+        text-align:center;                
+        background-position: 0px 0px;
+        color: #FFF;
+        cursor: pointer;
+        border: 0px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+.footer {
+    height: 45px;
+    line-height: 45px;
+    color: #B0B0B0;
+}
+
+    .footer a {
+        color: #989898;
+        text-decoration: none;
+        margin: 0px 3px;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+.table-main .btn {
+    color: #000;
+    background-color: #339900;
+    border-style: solid;
+    border-color: #330000;
+    border-width: 1px;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+}
+

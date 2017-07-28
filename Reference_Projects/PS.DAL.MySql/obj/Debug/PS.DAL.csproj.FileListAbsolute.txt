@@ -1,0 +1,5 @@
+D:\Develop_Projects\PS\PS.DAL\bin\Debug\PS.DAL.dll
+D:\Develop_Projects\PS\PS.DAL\bin\Debug\PS.DAL.pdb
+D:\Develop_Projects\PS\PS.DAL\obj\Debug\PS.DAL.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\PS.DAL\obj\Debug\PS.DAL.dll
+D:\Develop_Projects\PS\PS.DAL\obj\Debug\PS.DAL.pdb

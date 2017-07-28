@@ -1,0 +1,7 @@
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.5\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.5\Debug\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.5\MySql.Data.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.5\MySql.Data.MySqlClient.Properties.Resources.resources
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.5\MySql.Data.csproj.GenerateResource.Cache
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.5\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.5\MySql.Data.pdb

@@ -1,0 +1,709 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Language" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Language">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="stringName" type="xs:string" minOccurs="0" />
+                <xs:element name="engText" type="xs:string" minOccurs="0" />
+                <xs:element name="chsText" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//Language" />
+        <xs:field xpath="stringName" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Language>
+    <stringName>chs</stringName>
+    <engText>简体中文</engText>
+    <chsText>简体中文</chsText>
+  </Language>
+  <Language>
+    <stringName>eng</stringName>
+    <engText>English</engText>
+    <chsText>English</chsText>
+  </Language>
+  <Language>
+    <stringName>Default Language:</stringName>
+    <engText>Default Language:</engText>
+    <chsText>默认语言:</chsText>
+  </Language>
+  <Language>
+    <stringName>Generic Setting:</stringName>
+    <engText>Generic Setting:</engText>
+    <chsText>一般设置:</chsText>
+  </Language>
+  <Language>
+    <stringName>Home Page Title:</stringName>
+    <engText>Home Page Title:</engText>
+    <chsText>主页标题:</chsText>
+  </Language>
+  <Language>
+    <stringName>Must Login:</stringName>
+    <engText>Must Login:</engText>
+    <chsText>必须登录:</chsText>
+  </Language>
+  <Language>
+    <stringName>Home Page Logo:</stringName>
+    <engText>Home Page Logo:</engText>
+    <chsText>主页Logo:</chsText>
+  </Language>
+  <Language>
+    <stringName>Database:</stringName>
+    <engText>Database:</engText>
+    <chsText>数据库:</chsText>
+  </Language>
+  <Language>
+    <stringName>Type:</stringName>
+    <engText>Type:</engText>
+    <chsText>类型:</chsText>
+  </Language>
+  <Language>
+    <stringName>Server:</stringName>
+    <engText>Server:</engText>
+    <chsText>服务器:</chsText>
+  </Language>
+  <Language>
+    <stringName>Port:</stringName>
+    <engText>Port:</engText>
+    <chsText>端口:</chsText>
+  </Language>
+  <Language>
+    <stringName>User:</stringName>
+    <engText>User:</engText>
+    <chsText>用户:</chsText>
+  </Language>
+  <Language>
+    <stringName>Password:</stringName>
+    <engText>Password:</engText>
+    <chsText>密码:</chsText>
+  </Language>
+  <Language>
+    <stringName>Create Tables For Init Database</stringName>
+    <engText>Create Tables For Init Database</engText>
+    <chsText>初始化数据库并创建所有表</chsText>
+  </Language>
+  <Language>
+    <stringName>Submit</stringName>
+    <engText>Submit</engText>
+    <chsText>提交</chsText>
+  </Language>
+  <Language>
+    <stringName>Test Connection</stringName>
+    <engText>Test Connection</engText>
+    <chsText>测试连接</chsText>
+  </Language>
+  <Language>
+    <stringName>Pls Enter Your User Name !</stringName>
+    <engText>Pls Enter Your User Name !</engText>
+    <chsText>请输入你的用户名 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Pls Enter Your Password !</stringName>
+    <engText>Pls Enter Your Password !</engText>
+    <chsText>请输入你的密码 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Pls Enter Your New Password !</stringName>
+    <engText>Pls Enter Your New Password !</engText>
+    <chsText>请输入你的新密码 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Pls Confirm Your New Password!</stringName>
+    <engText>Pls Confirm Your New Password!</engText>
+    <chsText>请输入的你新密码!</chsText>
+  </Language>
+  <Language>
+    <stringName>Password is difference On Twice Enter !</stringName>
+    <engText>Password is difference On Twice Enter !</engText>
+    <chsText>两次输入的新密码不相同 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Enter Verify Code Is Incorrect !</stringName>
+    <engText>Enter Verify Code Is Incorrect !</engText>
+    <chsText>输入的校验码不正确 !</chsText>
+  </Language>
+  <Language>
+    <stringName>User Is NOT Existing !</stringName>
+    <engText>User Is NOT Existing !</engText>
+    <chsText>用户不存在 !</chsText>
+  </Language>
+  <Language>
+    <stringName>User Name:</stringName>
+    <engText>User Name:</engText>
+    <chsText>用户名:</chsText>
+  </Language>
+  <Language>
+    <stringName>Change Password:</stringName>
+    <engText>Change Password:</engText>
+    <chsText>更改密码:</chsText>
+  </Language>
+  <Language>
+    <stringName>New Password:</stringName>
+    <engText>New Password:</engText>
+    <chsText>新密码:</chsText>
+  </Language>
+  <Language>
+    <stringName>Confirm New Password:</stringName>
+    <engText>Confirm New Password:</engText>
+    <chsText>确认新密码:</chsText>
+  </Language>
+  <Language>
+    <stringName>Verify Code</stringName>
+    <engText>Verify Code</engText>
+    <chsText>校验码</chsText>
+  </Language>
+  <Language>
+    <stringName>Click For New Picture.</stringName>
+    <engText>Click For New Picture.</engText>
+    <chsText>看不清？点击获取新校验码.</chsText>
+  </Language>
+  <Language>
+    <stringName>Login</stringName>
+    <engText>Login</engText>
+    <chsText>登录</chsText>
+  </Language>
+  <Language>
+    <stringName>Verify Code:</stringName>
+    <engText>Verify Code:</engText>
+    <chsText>校验码:</chsText>
+  </Language>
+  <Language>
+    <stringName>Verify Code Is Incorrect !</stringName>
+    <engText>Verify Code Is Incorrect !</engText>
+    <chsText>校验码不正确 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Change Password</stringName>
+    <engText>Change Password</engText>
+    <chsText>更改密码</chsText>
+  </Language>
+  <Language>
+    <stringName>Invalid User name!</stringName>
+    <engText>Invalid User name!</engText>
+    <chsText>无效的用户名!</chsText>
+  </Language>
+  <Language>
+    <stringName>Can't Use Same Password within recently 5 times !</stringName>
+    <engText>Can't Use Same Password within recently 5 times !</engText>
+    <chsText>不能使用与最近5次密码相同的新密码 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Your password is wrong !</stringName>
+    <engText>Your password is wrong !</engText>
+    <chsText>你输入的密码是错误的 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Your account is disabled !</stringName>
+    <engText>Your account is disabled !</engText>
+    <chsText>你的账号已经被停用 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Your account is Locked !</stringName>
+    <engText>Your account is Locked !</engText>
+    <chsText>你的账号已经被锁定 !</chsText>
+  </Language>
+  <Language>
+    <stringName>Name</stringName>
+    <engText>Name</engText>
+    <chsText>名称</chsText>
+  </Language>
+  <Language>
+    <stringName>Site</stringName>
+    <engText>Site</engText>
+    <chsText>Site</chsText>
+  </Language>
+  <Language>
+    <stringName>BU</stringName>
+    <engText>BU</engText>
+    <chsText>BU</chsText>
+  </Language>
+  <Language>
+    <stringName>Project</stringName>
+    <engText>Project</engText>
+    <chsText>项目</chsText>
+  </Language>
+  <Language>
+    <stringName>Department</stringName>
+    <engText>Department</engText>
+    <chsText>部门</chsText>
+  </Language>
+  <Language>
+    <stringName>Password</stringName>
+    <engText>Password</engText>
+    <chsText>密码</chsText>
+  </Language>
+  <Language>
+    <stringName>Fullname</stringName>
+    <engText>Fullname</engText>
+    <chsText>全名</chsText>
+  </Language>
+  <Language>
+    <stringName>Description</stringName>
+    <engText>Description</engText>
+    <chsText>描述</chsText>
+  </Language>
+  <Language>
+    <stringName>Email_Address</stringName>
+    <engText>Email Address</engText>
+    <chsText>E-Mail地址</chsText>
+  </Language>
+  <Language>
+    <stringName>Telphone_Number</stringName>
+    <engText>Telphone Number</engText>
+    <chsText>电话号码</chsText>
+  </Language>
+  <Language>
+    <stringName>AD Login?</stringName>
+    <engText>AD Login?</engText>
+    <chsText>域登录?</chsText>
+  </Language>
+  <Language>
+    <stringName>AD_Account</stringName>
+    <engText>AD Account</engText>
+    <chsText>域账号</chsText>
+  </Language>
+  <Language>
+    <stringName>Change Password When Next Login?</stringName>
+    <engText>Change Password When Next Login?</engText>
+    <chsText>下次登录时改变密码?</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee_Update</stringName>
+    <engText>Last Update By Employee</engText>
+    <chsText>上次被此员工更新</chsText>
+  </Language>
+  <Language>
+    <stringName>Update Time</stringName>
+    <engText>Update Time</engText>
+    <chsText>更新时间</chsText>
+  </Language>
+  <Language>
+    <stringName>Enable?</stringName>
+    <engText>Enable?</engText>
+    <chsText>启用?</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee</stringName>
+    <engText>Employee</engText>
+    <chsText>员工</chsText>
+  </Language>
+  <Language>
+    <stringName>Login_Attempt</stringName>
+    <engText>Login_Attempt</engText>
+    <chsText>登录尝试次数</chsText>
+  </Language>
+  <Language>
+    <stringName>From_IP</stringName>
+    <engText>From IP</engText>
+    <chsText>来自IP</chsText>
+  </Language>
+  <Language>
+    <stringName>From_MAC</stringName>
+    <engText>From MAC</engText>
+    <chsText>来自MAC</chsText>
+  </Language>
+  <Language>
+    <stringName>From_Host</stringName>
+    <engText>From_Host</engText>
+    <chsText>来自Host</chsText>
+  </Language>
+  <Language>
+    <stringName>Login Time</stringName>
+    <engText>Login Time</engText>
+    <chsText>登录时间</chsText>
+  </Language>
+  <Language>
+    <stringName>Login_Result</stringName>
+    <engText>Login_Result</engText>
+    <chsText>Login_Result</chsText>
+  </Language>
+  <Language>
+    <stringName>Use AD?</stringName>
+    <engText>Use AD?</engText>
+    <chsText>使用域?</chsText>
+  </Language>
+  <Language>
+    <stringName>Change Pwd?</stringName>
+    <engText>Change Pwd?</engText>
+    <chsText>下次更改密码?</chsText>
+  </Language>
+  <Language>
+    <stringName>Update By Employee</stringName>
+    <engText>Last Update By Employee</engText>
+    <chsText>上次被此员工更新</chsText>
+  </Language>
+  <Language>
+    <stringName>Operate</stringName>
+    <engText>Operate</engText>
+    <chsText>操作</chsText>
+  </Language>
+  <Language>
+    <stringName>Add New</stringName>
+    <engText>Add New</engText>
+    <chsText>添加新条目</chsText>
+  </Language>
+  <Language>
+    <stringName>Submit Changes</stringName>
+    <engText>Submit All Changes</engText>
+    <chsText>提交所有更改</chsText>
+  </Language>
+  <Language>
+    <stringName>Shift_Group</stringName>
+    <engText>Shift Group</engText>
+    <chsText>班次组</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee_Owner</stringName>
+    <engText>Owner</engText>
+    <chsText>所有者</chsText>
+  </Language>
+  <Language>
+    <stringName>Group</stringName>
+    <engText>Group</engText>
+    <chsText>组</chsText>
+  </Language>
+  <Language>
+    <stringName>Workshop</stringName>
+    <engText>Workshop</engText>
+    <chsText>车间</chsText>
+  </Language>
+  <Language>
+    <stringName>Line</stringName>
+    <engText>Line</engText>
+    <chsText>生产线</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee Organization</stringName>
+    <engText>Employee Organization</engText>
+    <chsText>人员组织</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee In Group</stringName>
+    <engText>Employee In Group</engText>
+    <chsText>人员组分配</chsText>
+  </Language>
+  <Language>
+    <stringName>Common Organization</stringName>
+    <engText>Common Organization</engText>
+    <chsText>共用组织</chsText>
+  </Language>
+  <Language>
+    <stringName>Building</stringName>
+    <engText>Building</engText>
+    <chsText>厂房</chsText>
+  </Language>
+  <Language>
+    <stringName>Station Catalog</stringName>
+    <engText>Station Catalog</engText>
+    <chsText>站位目录</chsText>
+  </Language>
+  <Language>
+    <stringName>Station Type</stringName>
+    <engText>Station Type</engText>
+    <chsText>站位类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Station</stringName>
+    <engText>Station</engText>
+    <chsText>站位</chsText>
+  </Language>
+  <Language>
+    <stringName>Fixture</stringName>
+    <engText>Fixture</engText>
+    <chsText>夹具</chsText>
+  </Language>
+  <Language>
+    <stringName>Business Organization</stringName>
+    <engText>Business Organization</engText>
+    <chsText>商务组织</chsText>
+  </Language>
+  <Language>
+    <stringName>Part Family</stringName>
+    <engText>Part Family</engText>
+    <chsText>Part系列</chsText>
+  </Language>
+  <Language>
+    <stringName>Part Number</stringName>
+    <engText>Part Number</engText>
+    <chsText>Part Number</chsText>
+  </Language>
+  <Language>
+    <stringName>Shift</stringName>
+    <engText>Shift</engText>
+    <chsText>班次</chsText>
+  </Language>
+  <Language>
+    <stringName>Station_Catalog</stringName>
+    <engText>Station Catalog</engText>
+    <chsText>站位目录</chsText>
+  </Language>
+  <Language>
+    <stringName>Station_Template</stringName>
+    <engText>Station_Template</engText>
+    <chsText>站位模板</chsText>
+  </Language>
+  <Language>
+    <stringName>Handle_Assembly</stringName>
+    <engText>Handle_Assembly</engText>
+    <chsText>专用组件</chsText>
+  </Language>
+  <Language>
+    <stringName>Folder_For_Attachments</stringName>
+    <engText>Folder_For_Attachments</engText>
+    <chsText>放附件的文件夹</chsText>
+  </Language>
+  <Language>
+    <stringName>Folder For Attachments</stringName>
+    <engText>Folder For Attachments</engText>
+    <chsText>放附件的文件夹</chsText>
+  </Language>
+  <Language>
+    <stringName>UOM</stringName>
+    <engText>UOM</engText>
+    <chsText>计量单位</chsText>
+  </Language>
+  <Language>
+    <stringName>IsUnit</stringName>
+    <engText>IsUnit</engText>
+    <chsText>IsUnit</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee Group Define</stringName>
+    <engText>Employee Group Define</engText>
+    <chsText>员工组定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Employee In Group Assign</stringName>
+    <engText>Employee In Group Assign</engText>
+    <chsText>分配员工到组</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Lines</stringName>
+    <engText>Define Lines</engText>
+    <chsText>生产线定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Define BU</stringName>
+    <engText>Define BU</engText>
+    <chsText>BU定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Project</stringName>
+    <engText>Define Project</engText>
+    <chsText>项目定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Building</stringName>
+    <engText>Factoy Building</engText>
+    <chsText>厂房定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Workshop</stringName>
+    <engText>Define Workshop</engText>
+    <chsText>车间定义</chsText>
+  </Language>
+  <Language>
+    <stringName>Station_Type</stringName>
+    <engText>Station Type</engText>
+    <chsText>站位类型</chsText>
+  </Language>
+  <Language>
+    <stringName>HostName</stringName>
+    <engText>Host Name</engText>
+    <chsText>主机名称</chsText>
+  </Language>
+  <Language>
+    <stringName>MAC_Address</stringName>
+    <engText>MAC Address</engText>
+    <chsText>MAC地址</chsText>
+  </Language>
+  <Language>
+    <stringName>Guid_ID</stringName>
+    <engText>Guid_ID</engText>
+    <chsText>Guid_ID</chsText>
+  </Language>
+  <Language>
+    <stringName>Part_Family</stringName>
+    <engText>Part Family</engText>
+    <chsText>元件系列</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator And Dashboard</stringName>
+    <engText>Indicator And Dashboard</engText>
+    <chsText>指标和看板</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement Type</stringName>
+    <engText>Measurement Type</engText>
+    <chsText>测量类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement Period</stringName>
+    <engText>Measurement Period</engText>
+    <chsText>测量周期</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement Limit</stringName>
+    <engText>Measurement Specification</engText>
+    <chsText>测量规格</chsText>
+  </Language>
+  <Language>
+    <stringName>Action By Indicator</stringName>
+    <engText>Action By Indicator</engText>
+    <chsText>指标驱动的动作</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Indicator</stringName>
+    <engText>Define Indicator</engText>
+    <chsText>定义指标</chsText>
+  </Language>
+  <Language>
+    <stringName>Action Target By Indicator</stringName>
+    <engText>Action Target By Indicator</engText>
+    <chsText>按指标动作的目标</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Action Group</stringName>
+    <engText>Define Action Group</engText>
+    <chsText>定义动作组</chsText>
+  </Language>
+  <Language>
+    <stringName>Action Group Assign</stringName>
+    <engText>Action Group Assign</engText>
+    <chsText>分配动作到组</chsText>
+  </Language>
+  <Language>
+    <stringName>Alarm Level Of Indicator</stringName>
+    <engText>Alarm Level Of Indicator</engText>
+    <chsText>指标的告警级别</chsText>
+  </Language>
+  <Language>
+    <stringName>Define Indicator Group</stringName>
+    <engText>Define Indicator Group</engText>
+    <chsText>定义指标组</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator Group Assign</stringName>
+    <engText>Indicator Group Assign</engText>
+    <chsText>分配指标组</chsText>
+  </Language>
+  <Language>
+    <stringName>Low_Limit</stringName>
+    <engText>Low Limit</engText>
+    <chsText>上限</chsText>
+  </Language>
+  <Language>
+    <stringName>Update_Limit</stringName>
+    <engText>Update_Limit</engText>
+    <chsText>上限</chsText>
+  </Language>
+  <Language>
+    <stringName>LogicTarget</stringName>
+    <engText>Logic Target</engText>
+    <chsText>逻辑目标</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_Type_First</stringName>
+    <engText>First Target Type</engText>
+    <chsText>第1目标类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_ID_First</stringName>
+    <engText>First Target</engText>
+    <chsText>第1目标</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_Type_Second</stringName>
+    <engText>Second Target Type</engText>
+    <chsText>第2目标类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_Type_Thrid</stringName>
+    <engText>Thrid Target Type</engText>
+    <chsText>第3目标类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_Type_Fourth</stringName>
+    <engText>Second Target Type</engText>
+    <chsText>第4目标类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement_Period</stringName>
+    <engText>Measurement Period</engText>
+    <chsText>测量周期</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement_Type</stringName>
+    <engText>Measurement Type</engText>
+    <chsText>测量类型</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator_Action</stringName>
+    <engText>Action</engText>
+    <chsText>动作</chsText>
+  </Language>
+  <Language>
+    <stringName>Action_Value</stringName>
+    <engText>Value</engText>
+    <chsText>值</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator_Action_Group</stringName>
+    <engText>Action Group</engText>
+    <chsText>动作组</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator_Action_Value</stringName>
+    <engText>Value</engText>
+    <chsText>值</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator</stringName>
+    <engText>Indicator</engText>
+    <chsText>指标</chsText>
+  </Language>
+  <Language>
+    <stringName>Measurement_Limit</stringName>
+    <engText>Measurement Specification</engText>
+    <chsText>测量规格</chsText>
+  </Language>
+  <Language>
+    <stringName>Indicator_Group</stringName>
+    <engText>Indicator Group</engText>
+    <chsText>指标组</chsText>
+  </Language>
+  <Language>
+    <stringName>Explanation Reason Catalog</stringName>
+    <engText>Explanation Reason Catalog</engText>
+    <chsText>解释原因分类</chsText>
+  </Language>
+  <Language>
+    <stringName>Page Of Dashboard</stringName>
+    <engText>Page Of Dashboard</engText>
+    <chsText>看板页面</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_ID_Second</stringName>
+    <engText>Second Target</engText>
+    <chsText>第2目标</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_ID_Thrid</stringName>
+    <engText>Thrid Second</engText>
+    <chsText>第3目标</chsText>
+  </Language>
+  <Language>
+    <stringName>Object_ID_Fourth</stringName>
+    <engText>Fourth Second</engText>
+    <chsText>第4目标</chsText>
+  </Language>
+</NewDataSet>

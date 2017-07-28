@@ -1,0 +1,46 @@
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.DAL.SqlServer.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\bin\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.dll
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.dll
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.SqlServer.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb

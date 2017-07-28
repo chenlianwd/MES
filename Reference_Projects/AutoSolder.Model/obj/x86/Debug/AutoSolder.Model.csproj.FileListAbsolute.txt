@@ -1,0 +1,6 @@
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\bin\x86\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\bin\x86\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\bin\x86\Debug\System.Net.Http.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\bin\x86\Debug\System.Net.Http.xml
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\obj\x86\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.Model\obj\x86\Debug\AutoSolder.Model.pdb

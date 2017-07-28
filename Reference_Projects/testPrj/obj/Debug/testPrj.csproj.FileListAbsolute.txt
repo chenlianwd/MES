@@ -1,0 +1,76 @@
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\testPrj.exe
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\testPrj.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.Common.dll
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\obj\Debug\testPrj.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\testPrj\obj\Debug\testPrj.exe
+D:\Develop_Projects\PS\Reference_Projects\testPrj\obj\Debug\testPrj.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\testPrj\bin\Debug\testPrj.exe.config
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\obj\Debug\testPrj.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\testPrj.exe.config
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\testPrj.exe
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\testPrj.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\obj\Debug\testPrj.exe
+F:\program\PS_src_2017-03-15\Reference_Projects\testPrj\obj\Debug\testPrj.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.exe.config
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.exe
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.exe
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\ReflowerTester.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\ReflowerTester.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\WebSocket4Net.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.xml
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.csprojResolveAssemblyReference.cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.exe.config
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.exe
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\testPrj.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\MySql.Data.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Common.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\ReflowerTester.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\WebSocket4Net.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PISLog.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\MySql.Data.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\ReflowerTester.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.xml
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.exe
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.pdb

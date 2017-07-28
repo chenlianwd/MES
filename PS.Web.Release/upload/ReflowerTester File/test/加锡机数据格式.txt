@@ -1,0 +1,9 @@
+byte[] s;
+
+Temperature = (s[0] + (s[1] << 8)) / 10.0;//温度
+Humidity = s[2] + (s[3] << 8);//湿度
+remainSolderPercent = s[4] + (s[5] << 8);//剩余量
+usedSolderNum = s[6] + (s[7] << 8);//已使用瓶数
+addTimes = s[8] + (s[9] << 8);//次数
+startTime = s[10] + (s[11] << 8);//启动时间
+powerOffTime = s[11] + (s[12] << 8);//开机时间

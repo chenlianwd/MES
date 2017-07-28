@@ -1,0 +1,5 @@
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Release\PS.DAL.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Release\PS.DAL.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Release\PS.DAL.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Release\PS.DAL.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Release\PS.DAL.pdb

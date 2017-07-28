@@ -1,0 +1,43 @@
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.XML
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.XML
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csprojResolveAssemblyReference.cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb

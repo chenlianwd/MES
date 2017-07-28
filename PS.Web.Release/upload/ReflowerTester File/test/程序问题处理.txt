@@ -1,0 +1,65 @@
+一、没有收到数据，提示：计算机积极拒绝连接，能ping 通。
+	1.如果是采用TCP/udp协议进行连接,检查windows防火墙是否开放相应SocketTCP/udp端口;
+  	简单的检测方法是关闭windows防火墙后再试;
+
+	2.检查防火墙软件是否开放相应SocketTCP/udp端口;
+ 	 简单的检测方法是关闭防火墙软件后再试;
+
+	3.如果服务器端和客户端均在本机上运行,则将相应的 serverIP="127.0.0.1",serveraddress="127.0.0.1";
+	服务器端侦听:
+ 	listener = new TcpListener(IPAddress.Parse(serverIP), listenport);
+                listener.Start();
+	客户端与服务器建立连接:
+ 	 clientsocket = new TcpClient(serveraddress, serverport);
+
+	4.如果服务器运行在局域网或广域网内,则将相应的
+	serverIP,serveraddress设为本机所在局域网或广域网上的IP;
+
+	注意 serverport==listenport; 
+	5、路由器是否做了端口映射，
+原因：5，端口映射后，原来的ip还是能用，原ip对应的端口应该是被映射出来的端口所屏蔽，原端口不可用，所以关闭端口映射即可；
+
+
+	6、Telnet ip port 提示在端口失败 很大的可能原因是端口被占用，也就是说已经有一台服务程序在运行中了；
+
+二、改了配置文件后，队列进不去了，导致停止保存数据，
+	更换成重启服务的模式，
+	新问题：通过修改配置文件，监听重启的方法，重启的顺序有点问题（启动-停止）
+	
+	修改：不使用bat重启命令，不使用serviceController重启，
+	改为：environment.exit（1）；
+		然后再服务中设置失败自动重启；这样还能防止服务意外崩溃不重启。
+
+三、当同时存在两个服务程序的时候，可能就会出现抢占的情况，因为socket连接大概是一对一的吧。
+
+四、当查询的所有线都无法查询到数据的提示时，最大的可能性是mysql服务为开启，其次是数据库中所有表记录不存在了。应该想办法检测下mysql服务是否开启提示出来。
+
+五、偶然的，使用网络调试助手测试时，三台测试，在关闭发送数据后，任然在接收的到数据？？？
+
+六、编译器错误消息: CS0016: 未能写入输出文件“c:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.net Files/root/d553c2e4/701310ee/App_Web_default.aspx.cdcab7d2.seiozvdt.dll”--“拒绝访问。 ”
+解决办法：
+
+原因是由于系统目录下的Temp目录无相应的权限所致，具体操作如下：
+
+来到C:/Windows目录，修改temp文件夹的属性。
+
+在安全页设置IIS-IUSRS的权限，赋予修改、读取、写入等权限。
+
+七：由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+	和第一点类似，此情况为无法ping通，检查设备是否正常连接
+
+前端方面：
+
+一、JSON JavaScriptSerializer 字符串的长度超过了为 maxJsonLength 属性设置的值。实际上是需要做到分页查询，
+
+二、在分页查询的方面，考虑到框架限制，和hightchart配合的情况下，首先满足后台实现分页查询后，使用ligerui grid的
+	url分页，这样又没办法做到将返回解析的数据set给hightchart，因此，可能要做两个分开的请求，后果：查询数据量增加一倍。
+
+三、ligerui 的gird 实现服务端分页时，url的参数 parms 应和ajax post发送数据参数的格式同，为{键值对}，而非api上的[]数组。
+
+四、使用easyUI的时候回出现combobox控件时有时消失的情况，查看元素display:none，最后原因是对JS、CSS文件的引用出错，比如重复引用jquery，等。
+
+五、IE浏览器在new Date()的格式是不允许出现-的分隔符，使用/来代替，否则出现Nan;
+
+六、IE浏览器相比于火狐、谷歌、ME加载数据非常慢，大概一次五百条分页数据的加载会有十秒的等待时长，其他则两秒内，可能是ligerui控件没调好，或者是js代码问题，也许就是ie设置问题。

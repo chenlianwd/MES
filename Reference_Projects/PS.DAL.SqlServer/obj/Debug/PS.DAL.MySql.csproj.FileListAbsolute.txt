@@ -1,0 +1,9 @@
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.Common.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.Common.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\MySql.Data.pdb

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <appSettings file="">
+        <clear />
+        <add key="DBServer" value="localhost" />
+        <add key="Default_Language" value="eng" />
+        <add key="Home_Page_Title" value="Dashboard" />
+        <add key="Logo_Picture" value="" />
+        <add key="Must_Login" value="false" />
+        <add key="DAL_Assembly" value="DAL_MySql" />
+        <add key="DBPort" value="3306" />
+        <add key="DBUser" value="root" />
+        <add key="DBPwd" value="n8Cd3eQq3bg=" />
+        <add key="DBCatalog" value="ps" />
+    </appSettings>
+</configuration>

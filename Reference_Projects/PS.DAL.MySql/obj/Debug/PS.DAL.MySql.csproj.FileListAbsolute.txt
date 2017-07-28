@@ -1,0 +1,58 @@
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.Common.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\PS.Common.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\obj\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL\bin\Debug\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.dll
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.pdb
+D:\Develop_Projects\PS\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\MySql.Data.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\PS.Common.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.dll
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.dll
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\PS.DAL.MySql.pdb
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb

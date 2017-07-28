@@ -1,0 +1,23 @@
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.BLL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.BLL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\MySql.Data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\PISLog.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.BLL\bin\Debug\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15\PS.Web.Release\Bin\AutoSolder.BLL.dll
+F:\program\PS_src_2017-03-15\PS.Web.Release\Bin\AutoSolder.BLL.pdb
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\AutoSolder.BLL.dll
+F:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\AutoSolder.BLL.pdb
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.dll
+F:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.pdb
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\AutoSolder.BLL.dll
+E:\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin\AutoSolder.BLL.pdb
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.csprojResolveAssemblyReference.cache
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.dll
+E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.pdb

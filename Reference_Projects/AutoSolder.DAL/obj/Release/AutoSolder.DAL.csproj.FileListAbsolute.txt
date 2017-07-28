@@ -1,0 +1,9 @@
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.DAL.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.Model.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\mysql.data.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\PISLog.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.Model.pdb
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.csprojResolveAssemblyReference.cache
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.dll
+F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.pdb

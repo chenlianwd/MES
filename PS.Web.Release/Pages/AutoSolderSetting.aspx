@@ -185,10 +185,10 @@
                     //    row.val(rowindex);
                     //},
                 toolbar: { items: [
-                { text: '增加', click: AddItemclick },
+                    { text: "<% =LangHelper.GetText("Autosolder_SettingAdd") %>", click: AddItemclick },
                 { line: true },               
-                { text: '删除', click: DeleteItemclick },
-                { text: '保存', click: SaveItemclick },
+                { text: "<% =LangHelper.GetText("Autosolder_SettingRemove") %>", click: DeleteItemclick },
+                { text: "<% =LangHelper.GetText("Autosolder_SettingSave") %>", click: SaveItemclick },
                 { line: true }
                 ]}
                 });

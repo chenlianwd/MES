@@ -49,9 +49,9 @@
         var isIE = !!window.ActiveXObject;
         var Stations;
         var errorLable = null;
-         
+        
         $(function () {
-            errorLable = document.getElementById("errorLable");
+            errorLable = document.getElementById("errorLable");          
             ShowAutoSolderValues();
             setInterval(" ShowAutoSolderValues()", 60000);
         });
@@ -142,14 +142,14 @@
                             //+ "<span class=\"ValueLable\">port:</span><span class=\"OK\">" + Location.port + "</span><br>"                         
                             //+ "<span class=\"ValueLable\">Start Time:</span><span class=\"OK\">" + Location.starttime + "</span><br>"
                             //+ "<span class=\"ValueLable\">End Time:</span><span class=\"OK\">" + Location.endtime + "</span><br>"
-                                + "<span class=\"ValueLable\">timepoint:</span><span class=\"OK\">" + Location.timepoint + "</span><br>"
-                                + "<span class=\"ValueLable\">temperature:</span><span class=\"OK\">" + Location.temperature + "</span><br>"
-                                + "<span class=\"ValueLable\">humidity:</span><span class=\"OK\">" + Location.humidity + "</span><br>"
-                                + "<span class=\"ValueLable\">remain:</span><span class=\"OK\">"  + "</span><br>"
+                                + "<span class=\"ValueLable\"><% =LangHelper.GetText("TimePoint") %>:</span><span class=\"OK\">" + Location.timepoint + "</span><br>"
+                                + "<span class=\"ValueLable\"><% =LangHelper.GetText("Temperature") %>:</span><span class=\"OK\">" + Location.temperature + "</span><br>"
+                                + "<span class=\"ValueLable\"><% =LangHelper.GetText("Humidity") %>:</span><span class=\"OK\">" + Location.humidity + "</span><br>"
+                                + "<span class=\"ValueLable\"><% =LangHelper.GetText("Remain") %>:</span><span class=\"OK\">"  + "</span><br>"
 
                                 + "<div style=\"background-color:" + color + ";width:150px;height: 75px; border: 1px solid #000; font-size:20px\">" + Location.remain + "%" + "</div>"
 
-                                + "<span class=\"ValueLable\">used:</span><span class=\"OK\">" + Location.used + "</span><br>"
+                                + "<span class=\"ValueLable\"><% =LangHelper.GetText("Used") %>:</span><span class=\"OK\">" + Location.used + "</span><br>"
                             //+ "<img src=\"getfile.ashx?tb=true&AutoSolder=" + Location.id + "\" />"
                             + "</div>");
 
@@ -219,14 +219,13 @@
 <body style="margin-left: 0px; margin-top: 0px;">   
     <div style="position:absolute; width:100%; height:100%;background:url(images/bkg.png) repeat-y 0 0;">
          <div align="right">
-             <input id="settingbtn" type="button" value="设置" onclick="settingbtn_Click()"/>           
+             <input id="settingbtn" type="button" value="<% =LangHelper.GetText("AutosolderSetting") %>" onclick="settingbtn_Click()"/>           
         </div>
     <table align="center" style="text-align: center; height: 100%">
             <tr>
                 <td class="FailText" id="errorLable">
                     &nbsp;
-                </td>
-                
+                </td>               
             </tr>
             <tr>
                 <td align="center">

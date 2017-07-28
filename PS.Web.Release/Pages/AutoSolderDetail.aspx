@@ -431,10 +431,10 @@
                                 <asp:TextBox ID="edtEndTime" runat="server" ReadOnly="true" />
                             </td>
                             <td>
-                                <input type="button" class="l-button btn" value="Inquiry" onclick="f_Query();" />
+                                <input type="button" class="l-button btn" value="<% =LangHelper.GetText("Autosolder_query") %>" onclick="f_Query();" />
                             </td>
                             <td>
-                                 <input type="button" id="Export" class="l-button btn" value="Export" onclick="f_Export();"/>
+                                 <input type="button" id="Export" class="l-button btn" value="<% =LangHelper.GetText("Autosolder_export") %>" onclick="f_Export();"/>
                             </td>
                         </tr>
                     </table>

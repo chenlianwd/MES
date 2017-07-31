@@ -62,6 +62,10 @@
             color: Black;
         }
          #divcss{margin:0 auto;border:1px solid #000;width:300px;height:100px} 
+         .demo{ display:inline-block; position:relative; margin:50px; padding:20px; background:#fafafa; box-shadow:0 0 3px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; border-radius:4px; color:rgba(0,0,0, 0.8); text-shadow:0 1px 0 #fff;}  
+         .demo::before, #demo::after{ position:absolute; content:""; top:10px; bottom:15px; left:10px; width:50%; box-shadow:0 15px 10px rgba(0, 0, 0, 0.5); -webkit-transform: rotate(-3deg); -moz-transform:rotate(-3deg); -o-transform:rotate(-3deg); -ms-transform:rotate(-3deg); transform:rotate(-3deg); z-index:-1;}  
+        .demo::after{ right:10px; left:auto; -webkit-transform:rotate(3deg); -moz-transform:rotate(3deg); -o-transform:rotate(3deg); -ms-transform:rotate(3deg); transform: rotate(3deg);}  
+        .demo img{ vertical-align:bottom;}  
     </style>
       <script type="text/javascript">
           Date.prototype.Format = function (fmt) { //author: meizz 
@@ -118,7 +122,7 @@
                       errLabel.innerText = err;
                   }
               });
-              //改为默认查询最近有数据的一天之类的数据
+              //改为默认查询最近有数据的一天之内的数据
               switchbtn = $("#switchbutton").switchbutton({
                   checked: false,
                   onChange: function (checked) {
@@ -482,10 +486,10 @@
     <table style="width:100%;text-align: center;">
         <tr>
             <td width='50%'>
-                <div id="PisDiagram"></div>
+                <div id="PisDiagram" class="demo"></div>
             </td>
             <td width='50%'>
-                <div id="AutosolderDiagram"></div>
+                <div id="AutosolderDiagram" class="demo"></div>
             </td>
            
         </tr>
@@ -493,7 +497,11 @@
              <td>
                 <div id="ReflowTester"></div>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                   <div id="demo">  
+                     
+                   </div>  
+            </td>
             <td>&nbsp;</td>
         </tr>
         <tr>

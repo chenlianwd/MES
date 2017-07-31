@@ -48,3 +48,12 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.BLL.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.BLL.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\MySql.Data.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.dll
+E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.pdb

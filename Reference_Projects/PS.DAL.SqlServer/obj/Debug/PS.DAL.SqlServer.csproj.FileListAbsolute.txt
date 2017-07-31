@@ -44,3 +44,8 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+E:\program\Mes\PS.Web.Release\Bin\PS.DAL.SqlServer.dll
+E:\program\Mes\PS.Web.Release\Bin\PS.DAL.SqlServer.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb

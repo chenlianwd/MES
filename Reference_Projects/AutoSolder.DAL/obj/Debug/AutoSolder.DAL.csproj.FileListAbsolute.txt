@@ -31,3 +31,8 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.pdb
+E:\program\Mes\PS.Web.Release\Bin\AutoSolder.DAL.dll
+E:\program\Mes\PS.Web.Release\Bin\AutoSolder.DAL.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.pdb

@@ -33,3 +33,10 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.pdb

@@ -48,3 +48,6 @@ E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.My
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.dll
+E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\bin\v4.0\Release\MySql.Data.XML

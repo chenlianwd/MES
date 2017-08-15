@@ -7,3 +7,15 @@ F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\bin\Release\AutoS
 F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.csprojResolveAssemblyReference.cache
 F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.dll
 F:\program\PS_src_2017-03-15\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.DAL.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.DAL.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.Model.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\MySql.Data.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\PISLog.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\ReflowerTester.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\AutoSolder.Model.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\bin\Release\ReflowerTester.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.dll
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Release\AutoSolder.DAL.pdb

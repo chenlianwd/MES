@@ -50,14 +50,19 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
                         context.Response.Write(new JavaScriptSerializer().Serialize(new { Result = true }));
                     break;
                 case "GetUserInfo":
-                    //context.Response.Write(new JavaScriptSerializer().Serialize(BLL.LoadEmployeeInfo(context.Request["sUserName"])));
-                    context.Response.Write(ExtendedJavaScriptConverter<EmployeeInfo>.ToJson(UserMgr.LoadEmployeeInfo(context.Request["sUserName"]), "yyyy-MM-dd HH:mm:ss"));
+                    //context.Response.Write(new JavaScriptSerializer().Serialize(BLL.LoadEmployeeInfo(context.Request["sUserName"])));                 
+                    string jsonstr = ExtendedJavaScriptConverter<EmployeeInfo>.ToJson(UserMgr.LoadEmployeeInfo(context.Request["sUserName"]), "yyyy-MM-dd HH:mm:ss");
+                    context.Response.Write(jsonstr);
                     Thread.Sleep(500); //通过ajax每500毫秒只能取得一次用户信息，防止暴力刷新
                     break;
                 case "GetLogedUserName":
                     EmployeeInfo empInfo = context.Session["LogonEmployee"] as EmployeeInfo;
                     if (empInfo != null)
-                        context.Response.Write(new JavaScriptSerializer().Serialize(empInfo));
+                    {
+                        string jsonstr1 = new JavaScriptSerializer().Serialize(empInfo);
+                        context.Response.Write(jsonstr1);
+                    }
+                        
                     break;
                 case "logout":
                     context.Session["LogonEmployee"] = null; break;
@@ -69,9 +74,6 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
                     break;
                 case "GetAutoSolderData":
                     GetAutoSolderData(context);
-                    break;
-                case "GetConnection":
-                    //GetConnection(context);
                     break;
                 case "GetProductLineData":
                     GetProductLineData(context);

@@ -15,7 +15,7 @@
     <script src="js/easyui/jquery.easyui.min.js" type="text/javascript"></script>
     <script src="js/easyui/plugins/jquery.switchbutton.js" type="text/javascript"></script>
     <script src="js/easyui/plugins/jquery.datetimebox.js" type="text/javascript"></script>
-  
+   <script src="js/easyui/plugins/jquery.combobox.js" type="text/jscript"></script>
 
     <script src="js/ligerui/Source/lib/ligerUI/js/core/base.js" type="text/javascript"></script>
     <script src="js/ligerui/Source/lib/ligerUI/js/plugins/ligerComboBox.js" type="text/javascript"></script>
@@ -61,11 +61,13 @@
             text-align: left;
             color: Black;
         }
+         
          #divcss{margin:0 auto;border:1px solid #000;width:300px;height:100px} 
          .demo{ display:inline-block; position:relative; margin:50px; padding:20px; background:#fafafa; box-shadow:0 0 3px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; border-radius:4px; color:rgba(0,0,0, 0.8); text-shadow:0 1px 0 #fff;}  
          .demo::before, #demo::after{ position:absolute; content:""; top:10px; bottom:15px; left:10px; width:50%; box-shadow:0 15px 10px rgba(0, 0, 0, 0.5); -webkit-transform: rotate(-3deg); -moz-transform:rotate(-3deg); -o-transform:rotate(-3deg); -ms-transform:rotate(-3deg); transform:rotate(-3deg); z-index:-1;}  
         .demo::after{ right:10px; left:auto; -webkit-transform:rotate(3deg); -moz-transform:rotate(3deg); -o-transform:rotate(3deg); -ms-transform:rotate(3deg); transform: rotate(3deg);}  
         .demo img{ vertical-align:bottom;}  
+       
     </style>
       <script type="text/javascript">
           Date.prototype.Format = function (fmt) { //author: meizz 
@@ -95,8 +97,8 @@
           $(function () {
 
               errLabel = document.getElementById("errorLabel");
-              $("#edtStartTime").ligerDateEditor({ showTime: true, labelWidth: 100, labelAlign: 'left' });
-              $("#edtEndTime").ligerDateEditor({ showTime: true, labelWidth: 100, labelAlign: 'left' });
+             // $("#edtStartTime").ligerDateEditor({ showTime: true, labelWidth: 100, labelAlign: 'left' });
+             // $("#edtEndTime").ligerDateEditor({ showTime: true, labelWidth: 100, labelAlign: 'left' });
               var combox = $("#combobox").combobox({
                   valueField: 'id',
                   textField: 'proline',
@@ -440,20 +442,21 @@
       <table  style="margin:0px auto;" align="center">
         <tr>
             <td>
-                <p>产线选择</p>
+                <p>产线选择</p>              
             </td>
             <td>              
                 <input id="combobox" class="easyui-combobox" />
                
             </td>
+            
             <td>
-               <%--<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'" style="width:80px" onclick="f_search()">Search</a>--%>
+              
             </td>
             <td>
                 <input id="switchbutton"  class="easyui-switchbutton" data-options="onText:'chart',offText:'label'"/>
             </td>
         </tr>
-        <tr id="datetimebox" style="display:none"> 
+       <%-- <tr id="datetimebox" style="display:none"> 
              <td>                 
                     <p>开始时间</p>                               
                     <p>结束时间</p>                            
@@ -471,7 +474,7 @@
              <td>                              
             </td>
             
-        </tr>
+        </tr>--%>
           <tr>
               <td>
                    
@@ -485,11 +488,11 @@
     
     <table style="width:100%;text-align: center;">
         <tr>
-            <td width='50%'>
-                <div id="PisDiagram" class="demo"></div>
+            <td width='50%' style="border:1px #000000   solid;">
+                <div id="PisDiagram" class="demo" ></div>
             </td>
-            <td width='50%'>
-                <div id="AutosolderDiagram" class="demo"></div>
+            <td width='50%' style="border:1px #000000   solid;">
+                <div id="AutosolderDiagram" class="demo" ></div>
             </td>
            
         </tr>

@@ -10,6 +10,7 @@ using System.DirectoryServices;
 using System.Security.Cryptography;
 using System.Configuration;
 using PS;
+using MySql.Data.MySqlClient;
 
 public partial class loginForm : System.Web.UI.Page
 {

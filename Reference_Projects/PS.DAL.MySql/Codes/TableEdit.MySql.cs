@@ -55,6 +55,60 @@ namespace PS
             //    + (ei.HasOwner ? " INNER JOIN  ps_Employee tblOwner ON tblHistory._Employee_Owner=tblOwner._ID  \n" : "\n")
             //    + " ORDER BY tblHistory.`Name`";
 
+            sSql += "SELECT tblMaster._ID";
+            string sFromSql = " FROM " + QuoteField(ei.MasterTable) + " tblMaster \n";
+            foreach (Field fld in ei.MasterTable.Fields)
+            {
+                if (bOnlyArray == false || (bOnlyArray && fld.name.Equals("Name", StringComparison.OrdinalIgnoreCase))) //bOnlyArray时只取名字
+                    sSql += ",tblMaster." + QuoteField(fld);
+            }
+
+            int nSlaveIdx = 0;
+            string sNameInSlave = "", sOrderFld = "";
+            foreach (EditableTable tbl in ei.SlaveTables)
+            {
+                string sForeignKeyInMaster = ei.ForeignKeyInMaster(tbl);
+                if (sForeignKeyInMaster != "")
+                {
+                    nSlaveIdx++;
+                    string sSlaveName = "tblSlave" + nSlaveIdx;
+                    sFromSql += "   " + EditableTable.JoinName[(int)tbl.Join] + QuoteField(tbl) + " " + sSlaveName + "  ON tblMaster." + QuoteField(sForeignKeyInMaster) + "=" + sSlaveName + "._ID \n";
+                    sSql += "    ";
+                    foreach (Field fld in tbl.Fields)
+                    {
+                        if (bOnlyArray == false ||
+                            (bOnlyArray && (fld.name.Equals("Name", StringComparison.OrdinalIgnoreCase) || fld.name.Equals("_Status", StringComparison.OrdinalIgnoreCase)))) //bOnlyArray时只取名字和状态
+                        {
+                            if (!fld.name.Equals(ei.sSlaveKey, StringComparison.OrdinalIgnoreCase))
+                                sSql += "," + sSlaveName + "." + QuoteField(fld);
+                        }
+
+                        if (sNameInSlave == "" && fld.name.Equals("Name", StringComparison.OrdinalIgnoreCase))
+                            sNameInSlave = sSlaveName + "." + QuoteField(fld);
+
+                        if ((fld.editor & Editor.order) != Editor.none)
+                            sOrderFld = sSlaveName + "." + QuoteField(fld);
+                    }
+                    sSql += "\n";
+                }
+            }
+            sSql += sFromSql;
+
+            if (sNameInSlave != "")
+            {
+                if (!string.IsNullOrEmpty(sNameFilter))
+                    sSql += "    WHERE " + sNameInSlave + " LIKE '%" + sSql.Replace("'", "''") + "%' \n";
+
+                if (sOrderFld != "")
+                    sOrderFld = sOrderFld + "," + sNameInSlave;
+                else
+                    sOrderFld = sNameInSlave;
+            }
+
+            if (sOrderFld != "")
+                sSql += "   ORDER BY " + sOrderFld;
+
+
             return sSql;
         }
 
@@ -188,13 +242,13 @@ namespace PS
                     foreach (string sFld in ei.MasterTable.Fields)
                         AddFieldValue(nStatus, sFld, row, emp, "", ref sSqlRow, ref sValList);
 
-                    if (sSqlRow.Length > 0)
+                    if (sSqlRow.Length <= 0)
                     {
                         sSql += BuildInsert(ei.MasterTable.sName, sSqlRow, sValList);
                         sSql += "SET @nLastPrimaryID=last_insert_id();\n";
                     }
-                    //else
-                    //    sSql += "SET @nLastPrimaryID=" + row[ei.HistoryForeignKey] + ";\n";
+                    else
+                        sSql += "SET @nLastPrimaryID=" + row[ei.sSlaveKey] + ";\n";
 
                     if (ei.SlaveTables != null)
                     {
@@ -341,29 +395,33 @@ namespace PS
         }
         private void ExecCommandWithTransaction(string sSql)
         {
-            if (sSql.Length > 0)
-            {
-                //MySql 不支持在存贮过程外使用IF语句，创建一个临时的存贮过程
-                string sProcName = "temp_Proc_" + Guid.NewGuid().ToString().Replace('-', '_');
+            
+                if (sSql.Length > 0)
+                {
+                    //MySql 不支持在存贮过程外使用IF语句，创建一个临时的存贮过程
+                    string sProcName = "temp_Proc_" + Guid.NewGuid().ToString().Replace('-', '_');
 
-                sSql = "DELIMITER $$ \n"
-                    + "DROP PROCEDURE IF EXISTS " + sProcName + " $$ \n"
-                    + "CREATE PROCEDURE " + sProcName + " () \n"
-                    + "BEGIN \n\n"
-                    + sSql
-                    + "\n END $$\n"
-                    + "DELIMITER ;\n"
-                    + "CALL " + sProcName + "();\n"
-                    + "DROP PROCEDURE IF EXISTS " + sProcName + "; \n";
+                    sSql = "DELIMITER $$ \n"
+                        + "DROP PROCEDURE IF EXISTS " + sProcName + " $$ \n"
+                        + "CREATE PROCEDURE " + sProcName + " () \n"
+                        + "BEGIN \n\n"
+                        + sSql
+                        + "\n END $$\n"
+                        + "DELIMITER ;\n"
+                        + "CALL " + sProcName + "();\n"
+                        + "DROP PROCEDURE IF EXISTS " + sProcName + "; \n";
 
-                Debug.WriteLine(sSql);
+                    Debug.WriteLine(sSql);
 
-                DbTransaction objTrans = BeginTransaction();
-                MySqlScript script = new MySqlScript(objTrans.Connection as MySqlConnection, sSql);
-                script.Execute();
-                //ExecuteNonQuery(objTrans, sSql);
-                objTrans.Commit();//使用事务提交，保证数据完整性   
-            }
+                    DbTransaction objTrans = BeginTransaction();
+                    MySqlScript script = new MySqlScript(objTrans.Connection as MySqlConnection, sSql);
+                    script.Execute();
+                    //ExecuteNonQuery(objTrans, sSql);
+                    objTrans.Commit();//使用事务提交，保证数据完整性   
+                }
+            
+            
+           
         }
         public override void SubmitEditableChange(EmployeeInfo emp,changeStatus nStatus, bool bCheckChanged,  EditableInfo ei, Dictionary<string, object> row)
         {

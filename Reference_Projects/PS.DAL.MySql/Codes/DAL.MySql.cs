@@ -222,7 +222,7 @@ namespace PS
                 ,new KV("_Employee_Update", emp._Employee)                
                 ,new KV("Change_Pwd_When_Next_Login", false)
             }));
-        }
+        } 
         public override void UpdateUserInfo(LanguageHelper langHelper, long _Employee, string sHashPwd, long _Employee_Update, string FullName, string MailAddress)
         {
             Update_Employee_Info(_Employee, sHashPwd, _Employee_Update, null, FullName, null, MailAddress, -1, -1, null, null, null);

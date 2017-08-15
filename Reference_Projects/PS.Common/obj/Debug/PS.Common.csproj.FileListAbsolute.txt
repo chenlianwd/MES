@@ -30,6 +30,6 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.Common\obj\Debug\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Common.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Common.pdb
-E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.dll
 E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.csprojResolveAssemblyReference.cache

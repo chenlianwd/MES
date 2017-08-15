@@ -12,3 +12,10 @@ F:\program\PS_src_2017-03-15\Reference_Projects\PS.Reflow\bin\Release\PS.Common.
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.csprojResolveAssemblyReference.cache
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.dll
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Release\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Release\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Release\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\obj\Release\PS.Reflow.pdb

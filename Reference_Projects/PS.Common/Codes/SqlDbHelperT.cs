@@ -221,7 +221,7 @@ namespace PS
         protected virtual DataTable ExecuteDataTable(DbTransaction objTrans, string commandText, CommandType commandType, DbParameter[] parameters)
         {
             Debug.WriteLine(commandText);
-
+            Debug.WriteLine(ConnectionString);
             DataTable data = new DataTable();//实例化DataTable，用于装载查询结果集
             if (objTrans==null)
             {

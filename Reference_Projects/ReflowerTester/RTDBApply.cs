@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoSolder.DAL;
-using MySql.Data.MySqlClient;
 using System.IO;
 using ReflowerTestr.DAL;
 using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace ReflowerTester.DAL
 {
@@ -39,6 +39,7 @@ namespace ReflowerTester.DAL
                     LogClass.WriteLogFile("创建表RTfile失败->" + tableName);
                     return false;
                 }
+                
 
             }
             catch (MySqlException ex)

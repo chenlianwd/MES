@@ -41,6 +41,7 @@ namespace PS
                 sConn += ";Initial Catalog=" + ss;
 
             this.ConnectionString = sConn;
+          
         }
 
         public override string DALName

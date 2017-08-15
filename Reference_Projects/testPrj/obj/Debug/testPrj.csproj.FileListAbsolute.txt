@@ -74,3 +74,26 @@ E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\we
 E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.pdb
 E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.exe
 E:\program\PS_src_2017-03-15 - forserver\Reference_Projects\testPrj\obj\Debug\testPrj.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\testPrj.exe.config
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\testPrj.exe
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\testPrj.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\MySql.Data.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Common.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\ReflowerTester.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\WebSocket4Net.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PISLog.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\ReflowerTester.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.xml
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.pdb
+E:\program\Mes\Reference_Projects\testPrj\obj\Debug\testPrj.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\testPrj\obj\Debug\testPrj.exe
+E:\program\Mes\Reference_Projects\testPrj\obj\Debug\testPrj.pdb

@@ -15,7 +15,8 @@ namespace PS
     {
         public static EmployeeInfo LoadEmployeeInfo(string sUserName)
         {
-            DataTable tbl = Common.DAL.GetUseInfo(sUserName);
+            DataTable tbl = Common.DAL.GetUseInfo
+                (sUserName);
             if (tbl.Rows.Count > 0)
             {
                 DataRow dataRow = tbl.Rows[0];
@@ -32,7 +33,10 @@ namespace PS
                 empInfo.Login_Attempt = Cvt.ToInt32(dataRow["Login_Attempt"]);
 
                 empInfo.Update_Time = Cvt.ToDateTime(dataRow["Update_Time"]);
+
+                //mysql数据库中此字段名为Gravatar,已更改
                 empInfo._Attachment_Gravatar = Cvt.ToInt64(dataRow["_Attachment_Gravatar"]);
+
                 empInfo.Fullname = Cvt.ToString(dataRow["Fullname"]);
                 empInfo.Description = Cvt.ToString(dataRow["Description"]);
                 empInfo.Email_Address = Cvt.ToString(dataRow["Email_Address"]);

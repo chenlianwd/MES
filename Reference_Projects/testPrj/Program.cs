@@ -91,7 +91,7 @@ namespace testPrj
 #endif
 
             // Console.WriteLine(Common.DecryptDES("5dTxSJstjnMwU0DFBimfbw==", rgbIV, rgbKey));
-            Console.WriteLine(Common.EncryptDES("pempenn", rgbIV, rgbKey));
+            Console.WriteLine(Common.EncryptDES("SMTjhd84615789", rgbIV, rgbKey));
             //File.Move(@"D:\\AutosolderNet\\LOGFile.txt", @"D:\\AutosolderNet\\" + DateTime.Now.ToString("yyyyMMdd") + "LogFile.txt");
 
             //Console.WriteLine(Directory.GetCurrentDirectory() + "\\" + DateTime.Now.ToString("yyyyMMdd") + "\\LogFile.txt");

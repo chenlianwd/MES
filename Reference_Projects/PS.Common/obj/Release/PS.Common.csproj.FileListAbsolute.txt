@@ -8,3 +8,8 @@ F:\program\PS_src_2017-03-15\Reference_Projects\PS.Common\bin\Release\PS.Common.
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Common\obj\Release\PS.Common.csprojResolveAssemblyReference.cache
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Common\obj\Release\PS.Common.dll
 F:\program\PS_src_2017-03-15\Reference_Projects\PS.Common\obj\Release\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.pdb

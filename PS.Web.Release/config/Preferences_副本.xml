@@ -10,7 +10,7 @@
         <add key="DAL_Assembly" value="DAL_SqlServer" />
         <add key="DBPort" value="1433" />
         <add key="DBUser" value="sa" />
-        <add key="DBPwd" value="5dTxSJstjnMwU0DFBimfbw==" />
+        <add key="DBPwd" value="n8Cd3eQq3bg=" />
         <add key="DBCatalog" value="PIS_Test" />
     </appSettings>
 </configuration>

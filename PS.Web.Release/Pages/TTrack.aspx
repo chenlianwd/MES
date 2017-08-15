@@ -94,8 +94,8 @@
             
             
            
-             var sStartDate1 = $("#edtStartTime").ligerGetDateEditorManager().getValue();
-             var sEndDate1 = $("#edtEndTime").ligerGetDateEditorManager().getValue();
+             //var sStartDate1 = $("#edtStartTime").ligerGetDateEditorManager().getValue();
+            // var sEndDate1 = $("#edtEndTime").ligerGetDateEditorManager().getValue();
             
                 
 
@@ -141,12 +141,7 @@
 <body style="margin-left: 0px; margin-top: 0px;">
     <form id="form1" runat="server">
     <div style="position:absolute; width:100%; height:100%;background:url(images/bkg.png) repeat-y 0 0;">
-    <div align="left">
-       <%-- <div id="row1">
-        <input id="upload" runat="server" type="file" />
-        <asp:button id="uploadbtn" runat="server" text="上传" OnClick="uploadbtn_Click"/>       
-        <input id="downloadbtn" type="button" value="下载" onclick="downloadbtn_Click()" />
-        </div>--%>
+    <div align="left">      
         <div id="row2">
             <div class="row">
                 <div>

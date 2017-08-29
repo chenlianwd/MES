@@ -14,5 +14,10 @@ public partial class Pages_DisplayBoard : System.Web.UI.Page
         DateTime dtStart = dtEnd.AddDays(-1);
         //edtStartTime.Text = dtStart.ToString("yyyy-MM-dd HH:mm");
         //edtEndTime.Text = dtEnd.ToString("yyyy-MM-dd HH:mm");
+        if (Request.QueryString["line"] != null)
+        {
+            combobox.Text = Request.QueryString["line"];
+        }
+       
     }
 }

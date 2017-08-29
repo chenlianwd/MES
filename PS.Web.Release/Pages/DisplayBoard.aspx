@@ -1,6 +1,7 @@
 ﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeFile="DisplayBoard.aspx.cs" Inherits="Pages_DisplayBoard" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -9,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="js/easyui/themes/default/easyui.css" />
     <link rel="stylesheet" type="text/css" href="js/easyui/themes/icon.css" />
 
-     <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
     <script src="js/Highcharts-5.0.5/code/highcharts.js" type="text/javascript"></script>
     <script src="js/easyui/jquery.min.js" type="text/javascript"></script>
     <script src="js/easyui/jquery.easyui.min.js" type="text/javascript"></script>
@@ -113,7 +114,11 @@
                           return;
                       }
                       if (data) {
-                          $('#combobox').combobox('setValue', data[0].id);                        
+                          // $('#combobox').combobox('setValue', data[0].id);   
+                          
+                          var a = document.getElementById("combobox").value; 
+                          f_search(a);
+                              
                       }
                   },
                   onSelect: function (newrecord) {
@@ -133,6 +138,8 @@
                           f_search(line);                 
                   }
               });
+
+             
 
           });
           var pisChart = null;
@@ -336,7 +343,7 @@
                               + "<img src=\"getfile.ashx?tb=true&fn=" + pisdata.id + "\" />"
                               + "</div>");
                           var cpkspan = $("#cpkspan");
-                          cpkspan.css("background", Location.result ? "yellowgreen" : "Red");
+                          cpkspan.css("background", pisdata.result ? "yellowgreen" : "Red");
                       } else {
                           PisDiagram.html("<span class=\"StationNameTH\" >" + "未查询到数据" + "</span><br>");
                       }
@@ -445,7 +452,7 @@
                 <p>产线选择</p>              
             </td>
             <td>              
-                <input id="combobox" class="easyui-combobox" />
+                <asp:TextBox id="combobox" class="easyui-combobox" runat="server"/>
                
             </td>
             
@@ -488,22 +495,24 @@
     
     <table style="width:100%;text-align: center;">
         <tr>
-            <td width='50%' style="border:1px #000000   solid;">
+            <td style="width:33%; border:1px #000000   solid;">
                 <div id="PisDiagram" class="demo" ></div>
+                <br />
+                <div class="demo">PIS智能炉温曲线系统</div>
             </td>
-            <td width='50%' style="border:1px #000000   solid;">
+            <td style="width:33%; border:1px #000000   solid;">
                 <div id="AutosolderDiagram" class="demo" ></div>
+                <br />
+                <div class="demo">锡膏自动添加装置</div>
             </td>
-           
+           <td style="width:33%; border:1px #000000   solid;">
+                <div  class="demo" >无设备接入</div>
+           </td>
         </tr>
         <tr>
-             <td>
-                <div id="ReflowTester"></div>
-            </td>
+            
             <td>
-                   <div id="demo">  
-                     
-                   </div>  
+                   
             </td>
             <td>&nbsp;</td>
         </tr>

@@ -99,6 +99,10 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
                 case "GetAllDeviceDataChart":
                     GetAllDeviceDataChart(context);
                     break;
+                case "GetDisPlayBoardGeneralData":
+                    GetDisPlayBoardGeneralData(context);
+                    break;
+
             }
         }
         catch (Exception err)
@@ -111,6 +115,31 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
             }
         }
     }
+    /// <summary>
+    /// 获取Home数据(即所有产线所有设备current基础数据)
+    /// </summary>
+    /// <param name="context"></param>
+    private void GetDisPlayBoardGeneralData(HttpContext context)
+    {
+        //1、查询所有线别名
+        DataTable Dt = Common.DAL.GetPISProductlLine();
+        List < DataSet > DataSetList= new List<DataSet>();
+        var iso = new IsoDateTimeConverter();
+        //2、按线别名查询并组装对象
+        foreach (DataRow dr in Dt.Rows)
+        {
+            string line = dr["proline"].ToString();
+            DataSet Ds = Common.DAL.GetAllDeviceData(line);
+            
+            iso.DateTimeFormat = "yyyy-MM-dd HH:mm:ss";
+            DataSetList.Add(Ds);
+        }
+        string jsonstr = JsonConvert.SerializeObject(DataSetList, iso);
+        context.Response.Write(jsonstr);
+
+
+    }
+
     /// <summary>
     /// 获取当前产线所有设备图表数据(即最近一天时间数据)
     /// </summary>
@@ -286,9 +315,7 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
                     tb.Rows.Add(listNet[i].Ip, listNet[i].Port, listNet[i].Line, listDt[i].Rows[0]["TimePoint"], listDt[i].Rows[0]["Temperature"], listDt[i].Rows[0]["Humidity"], listDt[i].Rows[0]["RemainSolderPercent"], listDt[i].Rows[0]["UsedSolderNum"]);
                 }
             }
-            
-           
-           
+         
         }
 
         context.Response.Write(new LigerGridRows(tb, "yyyy-MM-dd HH:mm:ss", "F2").ToJson());

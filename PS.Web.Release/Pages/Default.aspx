@@ -199,8 +199,11 @@
             <%--<div id="TTrack" title="Reflower Tester Page">
                 <iframe style="border:none" name="Th3FIframe" src="TTrack.aspx"></iframe>
             </div>--%>
-            <div id="Display Board" title="Display Board">
+           <%-- <div id="Display Board" title="Display Board">
                 <iframe style="border:none" name="Th4FIframe" src="DisplayBoard.aspx"></iframe>
+            </div>--%>
+            <div id="DisplayBoard General" title="DisplayBoard General">
+                <iframe style="border:none" name="Th5FIframe" src="DisplayBoardGeneral.aspx"></iframe>
             </div>
         </asp:Panel>
     </asp:Panel>

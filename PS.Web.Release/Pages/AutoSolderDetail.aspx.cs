@@ -15,7 +15,8 @@ public partial class Pages_AutoSolderDetail : System.Web.UI.Page
         //查看是否有用户级语言辅助器，没有则用公共的
         LangHelper = FetchData.GetLanguageHelper(Session);
 
-        DateTime dtEnd = DateTime.Now.AddDays(1);
+        DateTime dtEnd = Common.DAL.GetCurrentdateTime(Request["line"]);
+      
         string sTime = Request["time"];
         if (!string.IsNullOrEmpty(sTime))
             dtEnd = DateTime.Parse(sTime).AddMinutes(1);
@@ -30,7 +31,7 @@ public partial class Pages_AutoSolderDetail : System.Web.UI.Page
 
         string test = Request["Remain"];
     }
-
+    
     
     
 

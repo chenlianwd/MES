@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <appSettings>
+        <add key="DAL_Assembly" value="DAL_SqlServer" />
+        <add key="DBServer" value="" />
+        <add key="DBUser" value="" />
+        <add key="DBPwd" value="" />
+        <add key="DBCatalog" value="" />
+        <add key="DBPort" value="" />
+    </appSettings>
+</configuration>

@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
+using MySql.Data.MySqlClient;
 
 namespace PS
 {
@@ -604,6 +605,38 @@ namespace PS
                 }
             }
             return value;//返回执行增删改操作之后，数据库中受影响的行数
+        }
+        /// <summary>
+        /// Only For Mysql
+        /// </summary>
+        /// <param name="commandText"></param>
+        /// <param name="commandType"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        protected virtual long ExecuteNonQueryReturnOutParameterValue(string commandText, CommandType commandType, DbParameter[] parameters)
+        {
+            long value = 0;
+            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(commandText, connection))
+                {
+                    command.CommandType = commandType;
+                    if (parameters != null)
+                    {
+                        foreach (DbParameter parameter in parameters)
+                        {
+                            command.Parameters.Add(parameter);
+                        }
+                    }
+                    connection.Open();
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        value = command.LastInsertedId;
+                    }
+                }
+            }
+
+            return value;
         }
         /// <summary>
         /// 返回当前连接的数据库中所有由用户创建的数据库

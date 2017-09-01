@@ -1,0 +1,10 @@
+E:\program\Mes\PS.Model\bin\Debug\PS.Model.dll
+E:\program\Mes\PS.Model\bin\Debug\PS.Model.pdb
+E:\program\PS.Web.Release\Bin\PS.Model.dll
+E:\program\PS.Web.Release\Bin\PS.Model.pdb
+E:\program\Mes\PS.Model\obj\Debug\PS.Model.dll
+E:\program\Mes\PS.Model\obj\Debug\PS.Model.pdb
+E:\program\Mes\PS.Web.Release\Bin\PS.Model.dll
+E:\program\Mes\PS.Web.Release\Bin\PS.Model.pdb
+E:\program\Mes\Reference_Projects\PS.Model\obj\Debug\PS.Model.dll
+E:\program\Mes\Reference_Projects\PS.Model\obj\Debug\PS.Model.pdb

@@ -6,6 +6,8 @@ using System.Data.Common;
 using System.Diagnostics;
 using System.Data.SqlClient;
 using AutoSolder.DAL;
+using PS.Reflow.Codes;
+
 namespace PS
 {
     public partial class DAL_SqlServer : DALBase
@@ -20,6 +22,11 @@ namespace PS
         {
             DataTable Dt = new DataTable();
             return Dt;
+        }
+        public override bool InsertPISData(PISModel pisModel, out long row)
+        {
+            row = 0;
+            return true;
         }
         public override DataSet GetAllDeviceData(string line)
         {
@@ -88,6 +95,10 @@ namespace PS
             IOb.ReadBaseProfile_TimeToTimeNum(line, dtStart.ToString(), dtEnd.ToString(), out num);
 
             return num;
+        }
+        public override DateTime GetCurrentdateTime(string line)
+        {
+            throw new NotImplementedException();
         }
     }
 }

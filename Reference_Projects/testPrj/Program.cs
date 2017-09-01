@@ -14,6 +14,10 @@ using System.Diagnostics;
 using AutoSolder.DAL;
 using MySql.Data.MySqlClient;
 using WebSocket4Net;
+using PS.Reflow;
+using System.Web;
+using System.Data.Common;
+using PS.Reflow.Codes;
 //using System.Net.WebSockets;
 //using WebSocketSharp;
 
@@ -91,7 +95,7 @@ namespace testPrj
 #endif
 
             // Console.WriteLine(Common.DecryptDES("5dTxSJstjnMwU0DFBimfbw==", rgbIV, rgbKey));
-            Console.WriteLine(Common.EncryptDES("SMTjhd84615789", rgbIV, rgbKey));
+            // Console.WriteLine(Common.EncryptDES("SMTjhd84615789", rgbIV, rgbKey));
             //File.Move(@"D:\\AutosolderNet\\LOGFile.txt", @"D:\\AutosolderNet\\" + DateTime.Now.ToString("yyyyMMdd") + "LogFile.txt");
 
             //Console.WriteLine(Directory.GetCurrentDirectory() + "\\" + DateTime.Now.ToString("yyyyMMdd") + "\\LogFile.txt");
@@ -157,10 +161,56 @@ namespace testPrj
             //websocket.MessageReceived += new EventHandler<MessageReceivedEventArgs>(websocket_MessageReceived);
             //websocket.Open();         
             // websocket.Send(Console.ReadLine());
+            PISModel pisModel = new PISModel() {ProLine="testLine", SN = "testSN", Model = "testModel", StartTime = DateTime.Now.AddHours(-1), EndTime = DateTime.Now, Flag = "1", CPK = 3.0, Result = "1", DateNo = DateTime.Now, HourNo = DateTime.Now, LineNo = "testNo", LineNoSHA = "testLineNoSHA", TheSN = "testTheSN", PISFileName = "testFileName" };
+            long row = 0;
+            try
+            {
+               row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV);", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), }, "id");
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+           
+            Console.WriteLine(row);
             Console.ReadKey();
             
             
             
+        }
+        private static long ExecuteNonQueryReturnOutParameterValue(string commandText, CommandType commandType, DbParameter[] parameters, string outParameterName)
+        {
+            Debug.WriteLine("ExecuteNonQueryReturnOutParameterValue:\n" + commandText);
+
+            long newid = 0;
+          
+                using (MySqlConnection connection = new MySqlConnection("Data Source = localhost;Database = ps; User Id = root; Password = pempenn; pooling = false; CharSet = utf8; port =3306"))
+                {
+                    using (MySqlCommand command = new MySqlCommand(commandText, connection))
+                    {
+                        command.CommandType = commandType;//设置command的CommandType为指定的CommandType
+                        //如果同时传入了参数，则添加这些参数
+                        if (parameters != null)
+                        {
+                            foreach (DbParameter parameter in parameters)
+                            {
+                                command.Parameters.Add(parameter);
+                            }
+                        }
+                        connection.Open();//打开数据库连接
+
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        newid = command.LastInsertedId;
+                            //value = int.Parse(command.Parameters[outParameterName].Value.ToString());
+                    }
+                       
+                    }
+                }
+            
+            
+            return newid;//返回执行增删改操作之后，数据库中受影响的行数
         }
 
         private static void websocket_MessageReceived(object sender, MessageReceivedEventArgs e)

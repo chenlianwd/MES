@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Common", "Reference_Projects\PS.Common\PS.Common.csproj", "{780FCFD2-9949-4344-AB0D-DA559D56CEA3}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflowerTester.BLL", "Reference_Projects\ReflowerTester.BLL\ReflowerTester.BLL.csproj", "{370493D6-D873-4E74-924C-2546116642DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflowerTester.Model", "Reference_Projects\ReflowerTester.Model\ReflowerTester.Model.csproj", "{29B8E61F-4F92-400A-B6D0-3796D6E8377B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Model", "Reference_Projects\PS.Model\PS.Model.csproj", "{93F9BDD0-A31C-4658-9D04-B871D5F85B02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,18 @@ Global
 		{29B8E61F-4F92-400A-B6D0-3796D6E8377B}.ReleaseNET40_Only|Any CPU.Build.0 = Release|Any CPU
 		{29B8E61F-4F92-400A-B6D0-3796D6E8377B}.ReleaseNET40_Only|x86.ActiveCfg = Release|Any CPU
 		{29B8E61F-4F92-400A-B6D0-3796D6E8377B}.ReleaseNET40_Only|x86.Build.0 = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Debug|x86.Build.0 = Debug|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Release|x86.ActiveCfg = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.Release|x86.Build.0 = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.ReleaseNET40_Only|Any CPU.ActiveCfg = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.ReleaseNET40_Only|Any CPU.Build.0 = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.ReleaseNET40_Only|x86.ActiveCfg = Release|Any CPU
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02}.ReleaseNET40_Only|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -255,6 +269,7 @@ Global
 		{D180E566-E98B-412B-BD2E-C16823B2A9FB} = {190CD42F-9A2F-4C87-A93B-3C742ED1922F}
 		{370493D6-D873-4E74-924C-2546116642DA} = {190CD42F-9A2F-4C87-A93B-3C742ED1922F}
 		{29B8E61F-4F92-400A-B6D0-3796D6E8377B} = {190CD42F-9A2F-4C87-A93B-3C742ED1922F}
+		{93F9BDD0-A31C-4658-9D04-B871D5F85B02} = {190CD42F-9A2F-4C87-A93B-3C742ED1922F}
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true

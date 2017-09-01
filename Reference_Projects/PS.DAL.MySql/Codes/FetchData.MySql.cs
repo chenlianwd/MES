@@ -6,6 +6,7 @@ using System.Data.Common;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
 using AutoSolder.DAL;
+using PS.Reflow.Codes;
 
 namespace PS
 {
@@ -34,6 +35,7 @@ namespace PS
         }
         public override DataTable GetPISProductlLine()
         {
+            //DISTINCT去重
             DataTable Dt = ExecuteDataTable("SELECT DISTINCT(proline) From pisreflowdata");
             DataColumn Dc = new DataColumn("id", typeof(System.Int32));
             //Dc.AutoIncrement = true;
@@ -47,6 +49,15 @@ namespace PS
             }
  
             return Dt;
+        }
+        public override bool InsertPISData(PISModel pisModel,out long row)
+        {
+             row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV)", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), });
+            if (!(row > 0))
+            {
+                return false;
+            }
+            return true;
         }
         public override DataSet GetAllDeviceData(string line)
         {
@@ -188,6 +199,22 @@ namespace PS
 
             return num;
         }
+        public override DateTime GetCurrentdateTime(string line)
+        {
+            DateTime dtime = DateTime.Now;
+            DataTable dt = new DataTable();
+            IOperationBase IOb = new DataStoreBase();
+            IOb.ReadCurrentBaseprofileToDataTable(line, out dt);
+            if (dt.Rows.Count > 0)
+            {
+                dtime = Convert.ToDateTime(dt.Rows[0]["TimePoint"]);
+            }
+            
+
+            return dtime;
+        }
+
+
 
     }
 }

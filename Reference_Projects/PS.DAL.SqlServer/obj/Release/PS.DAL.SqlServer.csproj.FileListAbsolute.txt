@@ -35,3 +35,6 @@ E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\bin\Release\ReflowerTester.pd
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Release\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Release\PS.DAL.SqlServer.dll
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Release\PS.DAL.SqlServer.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\bin\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\bin\Release\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\bin\Release\MySql.Data.xml

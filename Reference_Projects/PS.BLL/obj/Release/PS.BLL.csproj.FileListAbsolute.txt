@@ -28,3 +28,5 @@ E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.dll
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Reflow.pdb

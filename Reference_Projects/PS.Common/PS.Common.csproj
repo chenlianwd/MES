@@ -32,6 +32,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.JScript" />
+    <Reference Include="PS.Reflow">
+      <HintPath>..\PS.Reflow\bin\Debug\PS.Reflow.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -54,6 +57,12 @@
     <Compile Include="Codes\EquipmentBase.cs" />
     <Compile Include="Codes\LanguageHelper.cs" />
     <Compile Include="Codes\SqlDbHelperT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MySql\Source\MySql.Data\MySql.Data.csproj">
+      <Project>{E9DF5ED1-4CBD-4226-B931-9A51610AC14D}</Project>
+      <Name>MySql.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

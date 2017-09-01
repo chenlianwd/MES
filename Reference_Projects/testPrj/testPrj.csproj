@@ -36,9 +36,27 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoSolder.BLL">
+      <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.BLL.dll</HintPath>
+    </Reference>
     <Reference Include="AutoSolder.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoSolder.Model">
+      <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\PS.Web.Release\Bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="PS.Common">
+      <HintPath>..\..\PS.Web.Release\Bin\PS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PS.DAL.MySql">
+      <HintPath>..\..\PS.Web.Release\Bin\PS.DAL.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="PS.Reflow">
+      <HintPath>..\..\PS.Web.Release\Bin\PS.Reflow.dll</HintPath>
     </Reference>
     <Reference Include="ReflowerTester">
       <HintPath>..\ReflowerTester\bin\Debug\ReflowerTester.dll</HintPath>
@@ -70,14 +88,6 @@
     <ProjectReference Include="..\PS.BLL\PS.BLL.csproj">
       <Project>{fc886f88-03fa-417b-ac44-210c914abc15}</Project>
       <Name>PS.BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PS.Common\PS.Common.csproj">
-      <Project>{780fcfd2-9949-4344-ab0d-da559d56cea3}</Project>
-      <Name>PS.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PS.Reflow\PS.Reflow.csproj">
-      <Project>{5c20a594-b28b-40c9-851a-a59447aef704}</Project>
-      <Name>PS.Reflow</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

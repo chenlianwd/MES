@@ -13,3 +13,8 @@ E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.dll
 E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.pdb
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.dll
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.pdb
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.xml
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Reflow.pdb

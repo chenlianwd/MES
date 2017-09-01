@@ -51,3 +51,5 @@ E:\program\Mes\Reference_Projects\PS.DAL.MySql\bin\Release\ReflowerTester.pdb
 E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Release\PS.DAL.MySql.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Release\PS.DAL.MySql.dll
 E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Release\PS.DAL.MySql.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.MySql\bin\Release\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.DAL.MySql\bin\Release\PS.Reflow.pdb

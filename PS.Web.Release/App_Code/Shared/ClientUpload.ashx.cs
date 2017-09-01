@@ -12,7 +12,7 @@ using System.Web.SessionState;
 using ReflowerTestr;
 
 /// <summary>
-/// 客户端post上传数据处理
+/// 炉温测试仪客户端post上传数据处理
 /// </summary>
 public class ClientUpload:IHttpHandler, IRequiresSessionState
 {
@@ -74,7 +74,7 @@ public class ClientUpload:IHttpHandler, IRequiresSessionState
                         //如果不存在，创建它
                         Directory.CreateDirectory(path);
                     }
-                    string fileName = path + RTProfile.PtsFileName + strs[1].ToLower();//Guid.NewGuid().ToString()
+                    string fileName = path + RTProfile.PtsFileName + "." + strs[1].ToLower();//Guid.NewGuid().ToString()
                     files[i].SaveAs(fileName);
                     if (strs[1].ToLower() == "pts")
                     {
@@ -85,14 +85,14 @@ public class ClientUpload:IHttpHandler, IRequiresSessionState
                     }
                     
                 }
-                context.Response.Write(new JavaScriptSerializer().Serialize(new { StatusCode = "success", profile = RTProfile }));
+               
             }
 
             //数据库操作
             RTDBOperation Rtdb = new RTDBOperation();
-
-            context.Response.Write(Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable"));
-
+            Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable");
+            //context.Response.Write(Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable"));
+            context.Response.Write(new JavaScriptSerializer().Serialize(new { StatusCode = "success", profile = RTProfile }));
         }
         catch (Exception err)
         {

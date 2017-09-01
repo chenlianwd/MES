@@ -57,3 +57,5 @@ E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.dll
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Debug\PS.BLL.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Reflow.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Reflow.pdb

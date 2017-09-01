@@ -16,7 +16,8 @@
     <script src="js/easyui/jquery.easyui.min.js" type="text/javascript"></script>
     <script src="js/easyui/plugins/jquery.switchbutton.js" type="text/javascript"></script>
     <script src="js/easyui/plugins/jquery.datetimebox.js" type="text/javascript"></script>
-    <script src="js/easyui/plugins/jquery.combobox.js" type="text/jscript"></script>
+    <script src="js/easyui/plugins/jquery.combobox.js" type="text/javascript"></script>
+    <script src="js/easyui/datagrid-filter.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
 
     <script src="js/ligerui/Source/lib/ligerUI/js/core/base.js" type="text/javascript"></script>
@@ -128,7 +129,53 @@
                     errLabel.innerText = (XMLHttpRequest.responseText.length > 0 ? XMLHttpRequest.responseText : textStatus);
                 }
             })
-
+           
+            //$('#dg').datagrid('enableFilter');
+            //$('#dg').datagrid('enableFilter',
+            //    [
+            //        {
+            //        field: 'linename',
+            //        type: 'text',
+            //        options: { precision: 1 },
+            //        op: ['equal', 'notequal',  'contains']
+            //        }
+            //        ,
+            //        {
+            //            filed: 'ieamid',
+            //        type: 'text',
+            //        options: { precision: 1 },
+            //        op: ['equal', 'notequal', 'less', 'greater']
+            //        }
+            //        ,
+            //            {
+            //         field: 'status',
+            //         type: 'combobox',
+            //         options: {
+            //             panelHeight: 'auto',
+            //             data: [{ value: '', text: 'All' }, { value: 'P', text: 'P' }, { value: 'N', text: 'N' }],
+            //             onChange: function (value) {
+            //                 if (value == '') {
+            //                     dg.datagrid('removeFilterRule', 'Status');
+            //                 } else {
+            //                     dg.datagrid('addFilterRule', {
+            //                         field: 'Status',
+            //                         op: 'equal',
+            //                         value: value
+            //                     });
+            //                 }
+            //                 dg.datagrid('doFilter');
+            //                }   
+            //                }  
+            //        }
+            //    ]);
+            $('#dg').datagrid('getPager').pagination({
+                pageSize: 10,
+                pageNumber: 1,
+                pageList: [10, 20, 30, 40, 50],
+                beforePageText: '第',//页数文本框前显示的汉字   
+                afterPageText: '页    共 {pages} 页',
+                displayMsg: '当前显示 {from} - {to} 条记录   共 {total} 条记录',
+            });  
         });
         
         var PisDetailDlg = null;
@@ -187,15 +234,20 @@
         <asp:Panel ID="errorLabel"  ForeColor="Red" runat="server"></asp:Panel>
 	<div style="margin:20px 0;"></div>--%>
 	<div class="easyui-layout" style="width:100%;height:100%;" fit="true"><%--fit=true 不加IE、FF可能出现宽高变成0px--%>
-		<div data-options="region:'north'" style="height:50px"></div>
+		<div data-options="region:'north'" style="height:50px">
+		</div>
 		<div data-options="region:'south',split:true" style="height:50px;"></div>
-		<div data-options="region:'east',split:true" title="East" style="width:100px;"></div>
-		<div data-options="region:'west',split:true" title="West" style="width:100px;"></div>
+		<div data-options="region:'east',split:true" title="East" style="width:260px;">
+            <embed type="application/x-shockwave-flash" src="http://cdn.abowman.com/widgets/hamster/hamster.swf" width="250" height="210" id="flashID" name="flashID" bgcolor="#FFFFFF" quality="high" flashvars="up_backgroundColor=FFFFFF" wmode="opaque" allowscriptaccess="always">
+		</div>
+		<div data-options="region:'west',split:true" title="West" style="width:160px;">
+            <div height="120" width="150" align="center"><embed height="120" width="150" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" quality="high" autostart="1" wmode="transparent"></div>
+		</div>
 		<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
-			<table class="easyui-datagrid" id="dg" data-options="border:false,singleSelect:true,fit:true,fitColumns:true,remoteSort:false,emptyMsg: '<span>无记录</span>',loadMsg: '正在加载中，请稍等... '">
+			<table class="easyui-datagrid" id="dg" data-options="border:false,singleSelect:true,fit:true,fitColumns:true,pagination: true,remoteSort:false,emptyMsg: '<span>无记录</span>',loadMsg: '正在加载中，请稍等... '">
 				<thead>
 					<tr>
-                        <th data-options="field:'itemid',align:'center',sortable:'true'" width="60" >ID</th>
+                        <th data-options="field:'itemid',align:'center',sortable:'true'" width="60" >itemid</th>
 						<th data-options="field:'linename',align:'center'" width="60">LineName</th>
 						<th data-options="field:'PIS',align:'center'" width="100">PIS</th>
 						<th data-options="field:'AutoSolder',align:'center'" width="100">AutoSolder</th>

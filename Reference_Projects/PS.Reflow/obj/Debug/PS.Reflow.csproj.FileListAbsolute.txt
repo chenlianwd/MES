@@ -40,3 +40,5 @@ E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.dll
 E:\program\Mes\Reference_Projects\PS.Reflow\obj\Debug\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\MySql.Data.dll
+E:\program\Mes\Reference_Projects\PS.Reflow\bin\Debug\MySql.Data.pdb

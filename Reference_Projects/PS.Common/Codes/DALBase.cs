@@ -9,6 +9,7 @@ using System.Data.Common;
 using System.Web;
 
 using PS;
+using PS.Reflow.Codes;
 
 namespace PS
 {
@@ -201,5 +202,13 @@ namespace PS
         /// <param name="dtEnd"></param>
         /// <returns></returns>
         public abstract long GetAutoSolderDataTimeToTimeNum(string line, DateTime dtStart, DateTime dtEnd);
+        /// <summary>
+        /// 插入pis数据并返回行数
+        /// </summary>
+        /// <param name="pisModel"></param>
+        /// <param name="row"></param>
+        /// <returns></returns>
+        public abstract bool InsertPISData(PISModel pisModel, out long row);
+        public abstract DateTime GetCurrentdateTime(string line);
     }
 }

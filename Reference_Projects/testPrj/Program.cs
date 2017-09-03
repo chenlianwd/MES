@@ -18,6 +18,9 @@ using PS.Reflow;
 using System.Web;
 using System.Data.Common;
 using PS.Reflow.Codes;
+using Newtonsoft.Json;
+using AutoSolder.Model;
+using Newtonsoft.Json.Linq;
 //using System.Net.WebSockets;
 //using WebSocketSharp;
 
@@ -161,23 +164,37 @@ namespace testPrj
             //websocket.MessageReceived += new EventHandler<MessageReceivedEventArgs>(websocket_MessageReceived);
             //websocket.Open();         
             // websocket.Send(Console.ReadLine());
-            PISModel pisModel = new PISModel() {ProLine="testLine", SN = "testSN", Model = "testModel", StartTime = DateTime.Now.AddHours(-1), EndTime = DateTime.Now, Flag = "1", CPK = 3.0, Result = "1", DateNo = DateTime.Now, HourNo = DateTime.Now, LineNo = "testNo", LineNoSHA = "testLineNoSHA", TheSN = "testTheSN", PISFileName = "testFileName" };
-            long row = 0;
-            try
-            {
-               row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV);", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), }, "id");
-            }
-            catch (Exception e)
-            {
+            //PISModel pisModel = new PISModel() {ProLine="testLine", SN = "testSN", Model = "testModel", StartTime = DateTime.Now.AddHours(-1), EndTime = DateTime.Now, Flag = "1", CPK = 3.0, Result = "1", DateNo = DateTime.Now, HourNo = DateTime.Now, LineNo = "testNo", LineNoSHA = "testLineNoSHA", TheSN = "testTheSN", PISFileName = "testFileName" };
+            //long row = 0;
+            //try
+            //{
+            //   row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV);", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), }, "id");
+            //}
+            //catch (Exception e)
+            //{
 
-                throw;
-            }
-           
-            Console.WriteLine(row);
+            //    throw;
+            //}
+
+            //Console.WriteLine(row);
+            string test = "{ 'Name': 'Jon Smith11', 'Address': { 'City': 'New York', 'State': 'NY' }, 'Age': 42 }";
+            string test1 = "{ 'Name': 'Jon Smith22', 'Address': '12', 'Age': 42 }";
+            Testob stuff1 = JsonConvert.DeserializeObject<Testob>(test1);
+            dynamic stuff = JObject.Parse(test);
+            string name = stuff.Name;
+            // string name1 = stuff1.Name;
+            Console.WriteLine(name);
+            Console.WriteLine(stuff1.Name);
+
             Console.ReadKey();
-            
-            
-            
+
+
+
+        }
+        public class Testob{
+            public string Name { get; set; } = "1111";
+            public string Address { get; set; } = "";
+            public int Age { get; set; } = 0;
         }
         private static long ExecuteNonQueryReturnOutParameterValue(string commandText, CommandType commandType, DbParameter[] parameters, string outParameterName)
         {

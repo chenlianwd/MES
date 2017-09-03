@@ -1,4 +1,5 @@
-﻿using PS;
+﻿using Newtonsoft.Json;
+using PS;
 using PS.Reflow.Codes;
 using System;
 using System.Collections.Generic;
@@ -125,15 +126,74 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
 
     private void AddRecipeCollectProfile(HttpContext context)
     {
-        
-    }
 
+        Stream stream = context.Request.InputStream;
+        string json;
+        if (stream.Length == 0)
+        {
+            return;
+        }
+        StreamReader reader = new StreamReader(stream);
+        json = reader.ReadToEnd();
+        PostDataClass responseobj = JsonConvert.DeserializeObject<PostDataClass>(json);
+        //Dictionary<string, object> dic = JsonToDictionary(json);
+        //BaseProfileDS bpDS = JsonConvert.DeserializeObject<BaseProfileDS>(dic["BaseProfileDS"].ToString());
+        //string RecipeNameStr = dic["RecipeName"].ToString();
+        //DateTime DtStartTime = Convert.ToDateTime(dic["StartTime"]);
+        //string base64Str = dic["ImgData"].ToString();
+        File.WriteAllText("D://test.txt", responseobj.StartTime.ToString());
+        context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success"}));
+
+
+        //string BaseProfileDSStr =  context.Request["BaseProfileDS"];
+        //string RecipeNameStr = context.Request["RecipeName"];
+
+        //DateTime DtStartTime;
+        //DateTime.TryParse(context.Request["StartTime"], out DtStartTime);
+
+        //string base64Str = context.Request["ImgData"];
+
+        //BaseProfileDS bpDS = JsonConvert.DeserializeObject<BaseProfileDS>(BaseProfileDSStr);
+
+        ////测试
+        //var responsestr = new { BaseProfileDS = BaseProfileDSStr, RecipeName = RecipeNameStr, StartTime = DtStartTime, ImhData = base64Str };
+
+        //context.Response.Write(JsonConvert.SerializeObject(responsestr));
+        //存入数据库
+    }
+    /// <summary>
+    /// 将json数据反序列化为Dictionary
+    /// </summary>
+    /// <param name="jsonData">json数据</param>
+    /// <returns></returns>
+    public static Dictionary<string, object> JsonToDictionary(string jsonData)
+    {
+        //实例化JavaScriptSerializer类的新实例
+        JavaScriptSerializer jss = new JavaScriptSerializer();
+        try
+        {
+            //将指定的 JSON 字符串转换为 Dictionary<string, object> 类型的对象
+            return jss.Deserialize<Dictionary<string, object>>(jsonData);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
     public bool IsReusable
     {
         get
         {
             return false;
         }
+    }
+    public class PostDataClass
+    {
+        public string RecipeName { get; set; }
+        public DateTime StartTime { get; set; }
+        public string ImgData { get; set; }
+        public BaseProfileDS baseprofile { get; set; }
+
     }
 
     

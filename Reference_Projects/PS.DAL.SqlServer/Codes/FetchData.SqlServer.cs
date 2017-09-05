@@ -23,11 +23,7 @@ namespace PS
             DataTable Dt = new DataTable();
             return Dt;
         }
-        public override bool InsertPISData(PISModel pisModel, out long row)
-        {
-            row = 0;
-            return true;
-        }
+       
         public override DataSet GetAllDeviceData(string line)
         {
             DataSet Ds = new DataSet();
@@ -100,5 +96,31 @@ namespace PS
         {
             throw new NotImplementedException();
         }
+        #region Insert方法
+        public override bool InsertPISData(PISModel pisModel, out long row)
+        {
+            row = 0;
+            return true;
+        }
+        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertActualProfile(RecipeProfileDS recipeprofile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertEventProfile(EventInfoDS eventprofile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertRTMonitorData(RTMonitorDS data)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
     }
 }

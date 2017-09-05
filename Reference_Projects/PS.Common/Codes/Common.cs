@@ -13,6 +13,8 @@ using System.Xml;
 //using Microsoft.Web.Administration;
 
 using PS;
+using System.Drawing;
+using System.Web.Script.Serialization;
 
 namespace PS
 {
@@ -614,6 +616,65 @@ namespace PS
         {
 
 
+        }
+        /// <summary>
+        /// 图片 转为base64编码的文本
+        /// </summary>
+        /// <param name="bmp"></param>
+        /// <returns></returns>
+        public static string ImgToBase64String(Image img)
+        {
+            if (img == null)
+            {
+                return "";
+            }
+            Bitmap bmp = new Bitmap(img);
+            MemoryStream ms = new MemoryStream();
+            bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            byte[] arr = new byte[ms.Length];
+            ms.Position = 0;
+            ms.Read(arr, 0, (int)ms.Length);
+            ms.Close();
+            String strbaser64 = Convert.ToBase64String(arr);
+
+            return strbaser64;
+        }
+        /// <summary>
+        /// base64编码转图片对象
+        /// </summary>
+        /// <param name="base64Img"></param>
+        /// <returns></returns>
+        public static Image Base64StringToImage(string base64Img)
+        {
+            if (base64Img == "" || base64Img == null)
+            {
+                return null;
+            }
+            byte[] bytes = Convert.FromBase64String(base64Img);
+            MemoryStream ms = new MemoryStream();
+            ms.Write(bytes, 0, bytes.Length);
+            Bitmap bmp = new Bitmap(ms);
+            Image img = bmp;
+            return img;
+        }
+        /// <summary>
+        /// 将json数据反序列化为Dictionary
+        /// </summary>
+        /// <param name="jsonData">json数据</param>
+        /// <returns></returns>
+        public static Dictionary<string, object> JsonToDictionary(string jsonData)
+        {
+            //实例化JavaScriptSerializer类的新实例
+            JavaScriptSerializer jss = new JavaScriptSerializer();
+            try
+            {
+                //将指定的 JSON 字符串转换为 Dictionary<string, object> 类型的对象
+                return jss.Deserialize<Dictionary<string, object>>(jsonData);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

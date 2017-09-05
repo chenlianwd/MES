@@ -10,6 +10,7 @@ namespace PS
 {
     public partial class DAL_SqlServer : DALBase
     {
+      
         /// <summary>
         /// 构造一个对指定表的插入语句。
         /// </summary>
@@ -454,5 +455,6 @@ namespace PS
             ExecCommandWithTransaction(sSql);          
         }
 
+        
     }
 }

@@ -99,12 +99,9 @@ E:\program\Mes\Reference_Projects\testPrj\obj\Debug\testPrj.exe
 E:\program\Mes\Reference_Projects\testPrj\obj\Debug\testPrj.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.BLL.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\EPPlus.dll
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\Newtonsoft.Json.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.BLL.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\EPPlus.xml
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\Newtonsoft.Json.xml
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Model.dll
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Model.pdb

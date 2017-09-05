@@ -39,7 +39,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="PS.Common">
+    <Reference Include="PS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\PS.Common.dll</HintPath>
     </Reference>
     <Reference Include="ReflowerTester.Model">

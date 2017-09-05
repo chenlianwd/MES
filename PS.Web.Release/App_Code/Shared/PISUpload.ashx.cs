@@ -3,6 +3,7 @@ using PS;
 using PS.Reflow.Codes;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
             sErrMsg = s;
         }
         public string sErrMsg;
+        public string StatusCode = "fail";
 
     }   
     public void ProcessRequest(HttpContext context)
@@ -111,37 +113,42 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
 
     private void UpdateRTMonitorData(HttpContext context)
     {
-        throw new NotImplementedException();
+        string json = ParseToJson(context);
+        context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success" }));
     }
 
     private void AddEventProfile(HttpContext context)
     {
-        throw new NotImplementedException();
+        string json = ParseToJson(context);
+        context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success" }));
     }
 
     private void AddActualProfile(HttpContext context)
     {
-        throw new NotImplementedException();
+        string json = ParseToJson(context);
+        PostActualDataClass responsobj = JsonConvert.DeserializeObject<PostActualDataClass>(json);
+        Image Img = Common.Base64StringToImage(responsobj.ImgData);
+
+
+        context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success" }));
     }
 
     private void AddRecipeCollectProfile(HttpContext context)
     {
 
-        Stream stream = context.Request.InputStream;
-        string json;
-        if (stream.Length == 0)
+        string json = ParseToJson(context);
+        PostRecipeDataClass responseobj = JsonConvert.DeserializeObject<PostRecipeDataClass>(json);
+        Image Img = Common.Base64StringToImage(responseobj.ImgData);
+
+        //测试完毕，数据库操作待写
+        var path = context.Request.PhysicalApplicationPath + @"upload/RecipeProfiles/" + responseobj.baseprofile.ProLine + "/" + responseobj.baseprofile.ProName + "/";
+        if (!Directory.Exists(path))
         {
-            return;
+            Directory.CreateDirectory(path);
         }
-        StreamReader reader = new StreamReader(stream);
-        json = reader.ReadToEnd();
-        PostDataClass responseobj = JsonConvert.DeserializeObject<PostDataClass>(json);
-        //Dictionary<string, object> dic = JsonToDictionary(json);
-        //BaseProfileDS bpDS = JsonConvert.DeserializeObject<BaseProfileDS>(dic["BaseProfileDS"].ToString());
-        //string RecipeNameStr = dic["RecipeName"].ToString();
-        //DateTime DtStartTime = Convert.ToDateTime(dic["StartTime"]);
-        //string base64Str = dic["ImgData"].ToString();
-        File.WriteAllText("D://test.txt", responseobj.StartTime.ToString());
+        string fileName = path + responseobj.baseprofile.BaseName + ".png";
+        Img.Save(fileName);
+        //File.WriteAllText("D://test.txt", responseobj.StartTime.ToString());
         context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success"}));
 
 
@@ -161,25 +168,21 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
         //context.Response.Write(JsonConvert.SerializeObject(responsestr));
         //存入数据库
     }
-    /// <summary>
-    /// 将json数据反序列化为Dictionary
-    /// </summary>
-    /// <param name="jsonData">json数据</param>
-    /// <returns></returns>
-    public static Dictionary<string, object> JsonToDictionary(string jsonData)
+    private string ParseToJson(HttpContext context)
     {
-        //实例化JavaScriptSerializer类的新实例
-        JavaScriptSerializer jss = new JavaScriptSerializer();
-        try
+        Stream stream = context.Request.InputStream;
+        string json;
+        if (stream.Length == 0)
         {
-            //将指定的 JSON 字符串转换为 Dictionary<string, object> 类型的对象
-            return jss.Deserialize<Dictionary<string, object>>(jsonData);
+            return "";
         }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
+        StreamReader reader = new StreamReader(stream);
+        json = reader.ReadToEnd();
+
+        return json;
     }
+
+
     public bool IsReusable
     {
         get
@@ -187,7 +190,12 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
             return false;
         }
     }
-    public class PostDataClass
+    private class PostActualDataClass
+    {
+        public string ImgData { get; set; }
+        public RecipeProfileDS recipeprofile { get; set; }
+    }
+    private class PostRecipeDataClass
     {
         public string RecipeName { get; set; }
         public DateTime StartTime { get; set; }

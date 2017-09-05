@@ -50,15 +50,7 @@ namespace PS
  
             return Dt;
         }
-        public override bool InsertPISData(PISModel pisModel,out long row)
-        {
-             row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV)", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), });
-            if (!(row > 0))
-            {
-                return false;
-            }
-            return true;
-        }
+        
         public override DataSet GetAllDeviceData(string line)
         {
             //因为两个数据库查询方法中的连接分开写的，分两次查出
@@ -213,7 +205,41 @@ namespace PS
 
             return dtime;
         }
+        #region Insert方法
+        public override bool InsertPISData(PISModel pisModel, out long row)
+        {
+            row = ExecuteNonQueryReturnOutParameterValue("insert into pisreflowdata (proline, sn, model, starttime, endtime, flag, cpk, result, DateNo, HourNo, LineNo, LineNoSHA, theSN) values(@prolineV, @snV, @modelV, @starttimeV, @endtimeV, @flagV, @cpkV, @resultV, @DateNoV, @HourNoV, @LineNoV, @LineNoSHAV, @theSNV)", CommandType.Text, new MySqlParameter[] { new MySqlParameter(@"prolineV", pisModel.ProLine), new MySqlParameter(@"snV", pisModel.SN), new MySqlParameter(@"modelV", pisModel.Model), new MySqlParameter(@"starttimeV", pisModel.StartTime), new MySqlParameter(@"endtimeV", pisModel.EndTime), new MySqlParameter(@"flagV", pisModel.Flag), new MySqlParameter(@"cpkV", pisModel.CPK), new MySqlParameter(@"resultV", pisModel.Result), new MySqlParameter(@"DateNoV", pisModel.DateNo), new MySqlParameter(@"HourNoV", pisModel.HourNo), new MySqlParameter(@"LineNov", pisModel.LineNo), new MySqlParameter(@"LineNoSHAV", pisModel.LineNoSHA), new MySqlParameter(@"theSNV", pisModel.TheSN), });
+            if (!(row > 0))
+            {
+                return false;
+            }
+            return true;
+        }
 
+        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertActualProfile(RecipeProfileDS recipeprofile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertEventProfile(EventInfoDS eventprofile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool InsertRTMonitorData(RTMonitorDS data)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+        #endregion
 
 
     }

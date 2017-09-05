@@ -35,6 +35,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.DAL.dll</HintPath>
     </Reference>
+    <Reference Include="PS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PS.Web.Release\Bin\PS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PS.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PS.Web.Release\Bin\PS.Model.dll</HintPath>
+    </Reference>
     <Reference Include="PS.Reflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\PS.Reflow\bin\Debug\PS.Reflow.dll</HintPath>
@@ -57,10 +65,6 @@
     <ProjectReference Include="..\MySql\Source\MySql.Data\MySql.Data.csproj">
       <Project>{e9df5ed1-4cbd-4226-b931-9a51610ac14d}</Project>
       <Name>MySql.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PS.Common\PS.Common.csproj">
-      <Project>{780fcfd2-9949-4344-ab0d-da559d56cea3}</Project>
-      <Name>PS.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

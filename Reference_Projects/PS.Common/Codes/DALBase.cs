@@ -7,9 +7,9 @@ using System.Security.Cryptography;
 using System.Configuration;
 using System.Data.Common;
 using System.Web;
-
 using PS;
 using PS.Reflow.Codes;
+
 
 namespace PS
 {
@@ -201,7 +201,15 @@ namespace PS
         /// <param name="dtStart"></param>
         /// <param name="dtEnd"></param>
         /// <returns></returns>
-        public abstract long GetAutoSolderDataTimeToTimeNum(string line, DateTime dtStart, DateTime dtEnd);
+        public abstract long GetAutoSolderDataTimeToTimeNum(string line, DateTime dtStart, DateTime dtEnd);     
+        /// <summary>
+        /// 获取最新数据的时间
+        /// </summary>
+        /// <param name="line"></param>
+        /// <returns></returns>
+        public abstract DateTime GetCurrentdateTime(string line);
+
+       // Insert
         /// <summary>
         /// 插入pis数据并返回行数
         /// </summary>
@@ -209,6 +217,18 @@ namespace PS
         /// <param name="row"></param>
         /// <returns></returns>
         public abstract bool InsertPISData(PISModel pisModel, out long row);
-        public abstract DateTime GetCurrentdateTime(string line);
+        /// <summary>
+        /// 插入pis基准数据
+        /// </summary>
+        /// <param name="BaseProfile"></param>
+        /// <returns></returns>
+        public abstract bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime);
+
+        public abstract bool InsertActualProfile(RecipeProfileDS recipeprofile);
+
+        public abstract bool InsertEventProfile(EventInfoDS eventprofile);
+
+        public abstract bool InsertRTMonitorData(RTMonitorDS data);
+
     }
 }

@@ -54,14 +54,6 @@ website.publishproj
       <Project>{780FCFD2-9949-4344-AB0D-DA559D56CEA3}</Project>
       <Name>PS.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Reference_Projects\PS.DAL.MySql\PS.DAL.MySql.csproj">
-      <Project>{2F1573EF-2059-42FB-A0FF-531DB4658488}</Project>
-      <Name>PS.DAL.MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Reference_Projects\PS.DAL.SqlServer\PS.DAL.SqlServer.csproj">
-      <Project>{B82B6978-6FED-4232-A6DA-4C49CED2D739}</Project>
-      <Name>PS.DAL.SqlServer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Reference_Projects\PS.Reflow\PS.Reflow.csproj">
       <Project>{5C20A594-B28B-40C9-851A-A59447AEF704}</Project>
       <Name>PS.Reflow</Name>

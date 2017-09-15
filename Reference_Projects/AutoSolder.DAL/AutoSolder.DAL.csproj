@@ -35,7 +35,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MySql\PS.Web.Release\Bin\MySql.Data.dll</HintPath>
+      <HintPath>..\..\PS.Web.Release\Bin\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="PISLog, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -70,6 +70,9 @@
       <Project>{54EE4617-7585-4612-BF97-C59A5774B038}</Project>
       <Name>AutoSolder.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

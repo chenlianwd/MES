@@ -56,8 +56,11 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+E:\下载示例\MES-master\MES-master\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
+E:\下载示例\MES-master\MES-master\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
+E:\下载示例\MES-master\MES-master\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
 E:\program\Mes\PS.Web.Release\Bin\PS.DAL.MySql.dll
 E:\program\Mes\PS.Web.Release\Bin\PS.DAL.MySql.pdb
-E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.dll
 E:\program\Mes\Reference_Projects\PS.DAL.MySql\obj\Debug\PS.DAL.MySql.pdb

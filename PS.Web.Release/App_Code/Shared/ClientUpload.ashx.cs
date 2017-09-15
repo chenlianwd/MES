@@ -9,7 +9,7 @@ using System.Text;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.SessionState;
-using ReflowerTestr;
+
 
 /// <summary>
 /// 炉温测试仪客户端post上传数据处理

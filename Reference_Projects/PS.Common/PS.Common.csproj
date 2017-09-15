@@ -32,11 +32,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.JScript" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PS.Web.Release\Bin\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="PS.Model">
       <HintPath>..\..\PS.Web.Release\Bin\PS.Model.dll</HintPath>
     </Reference>
-    <Reference Include="PS.Reflow">
-      <HintPath>..\PS.Reflow\bin\Debug\PS.Reflow.dll</HintPath>
+    <Reference Include="PS.Reflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PS.Web.Release\Bin\PS.Reflow.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -63,10 +68,7 @@
     <Compile Include="Codes\SqlDbHelperT.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MySql\Source\MySql.Data\MySql.Data.csproj">
-      <Project>{E9DF5ED1-4CBD-4226-B931-9A51610AC14D}</Project>
-      <Name>MySql.Data</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

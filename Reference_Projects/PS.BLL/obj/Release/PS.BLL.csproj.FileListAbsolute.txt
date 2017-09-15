@@ -22,7 +22,6 @@ E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.BLL.dll
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.BLL.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\MySql.Data.dll
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Common.dll
-E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\MySql.Data.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\MySql.Data.xml
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.csprojResolveAssemblyReference.cache
@@ -30,3 +29,8 @@ E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.dll
 E:\program\Mes\Reference_Projects\PS.BLL\obj\Release\PS.BLL.pdb
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Reflow.dll
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.BLL.dll.config
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Model.dll
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Common.dll.config
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\PS.Model.pdb
+E:\program\Mes\Reference_Projects\PS.BLL\bin\Release\MySql.Data.pdb

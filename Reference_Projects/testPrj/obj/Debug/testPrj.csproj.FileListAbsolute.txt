@@ -87,7 +87,6 @@ E:\program\Mes\Reference_Projects\testPrj\bin\Debug\websocket-sharp.clone.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\WebSocket4Net.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.Model.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PISLog.dll
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\MySql.Data.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.BLL.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Common.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Reflow.pdb
@@ -101,7 +100,15 @@ E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.BLL.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\EPPlus.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\Newtonsoft.Json.dll
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.BLL.pdb
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.pdb
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\EPPlus.xml
-E:\program\Mes\Reference_Projects\testPrj\bin\Debug\Newtonsoft.Json.xml
 E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Model.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\SuperSocket.ClientEngine.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\Newtonsoft.Json.xml
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Model.pdb
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.DAL.MySql.dll
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\AutoSolder.DAL.dll.config
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.BLL.dll.config
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Common.dll.config
+E:\program\Mes\Reference_Projects\testPrj\bin\Debug\PS.Reflow.dll.config

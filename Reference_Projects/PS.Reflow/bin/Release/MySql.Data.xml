@@ -32,12 +32,6 @@
             
             </summary>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlWindowsAuthenticationPlugin.GetTargetName">
-            <summary>
-            Currently this method is unused
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:MySql.Data.MySqlClient.MySqlBulkLoader">
             <summary>
             
@@ -151,6 +145,12 @@
         <member name="M:MySql.Data.MySqlClient.MySqlBulkLoader.Load">
             <summary>
             Execute the load operation
+            </summary>
+            <returns>The number of rows inserted.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlBulkLoader.LoadAsync">
+            <summary>
+            Async version of Load
             </summary>
             <returns>The number of rows inserted.</returns>
         </member>
@@ -626,7 +626,7 @@
     </example>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlCommand.LastInsertedId">
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/mysqlcommand.xml" path="docs/LastInseredId/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/mysqlcommand.xml" path="docs/LastInseredId/*" />
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlCommand.CommandText">
             <summary>
@@ -705,7 +705,7 @@
     </example>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlCommand.IsPrepared">
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/mysqlcommand.xml" path="docs/IsPrepared/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/mysqlcommand.xml" path="docs/IsPrepared/*" />
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlCommand.Connection">
             <summary>
@@ -1036,7 +1036,7 @@
     </example>
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlCommand.Prepare(System.Int32)">
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/mysqlcommand.xml" path="docs/Prepare2/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/mysqlcommand.xml" path="docs/Prepare2/*" />
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlCommand.Prepare">
             <summary>
@@ -2546,6 +2546,53 @@
       </para>
     </remarks>
         </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransactionAsync">
+            <summary>
+            Async version of BeginTransaction
+            </summary>
+            <returns>An object representing the new transaction.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransactionAsync(System.Data.IsolationLevel)">
+            <summary>
+            Async version of BeginTransaction
+            </summary>
+            <param name="iso">The isolation level under which the transaction should run. </param>
+            <returns>An object representing the new transaction.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ChangeDataBaseAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Async version of ChangeDataBase
+            </summary>
+            <param name="databaseName">The name of the database to use.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.CloseAsync">
+            <summary>
+            Async version of Close
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ClearPoolAsync(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Async version of ClearPool
+            </summary>
+            <param name="connection">The connection associated with the pool to be cleared.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ClearAllPoolsAsync">
+            <summary>
+            Async version of ClearAllPools
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.GetSchemaCollectionAsync(System.String,System.String[])">
+            <summary>
+            Async version of GetSchemaCollection
+            </summary>
+            <param name="collectionName">Name of the collection</param>
+            <param name="restrictionValues">Values to restrict</param>
+            <returns>A schema collection</returns>
+        </member>
         <member name="M:MySql.Data.MySqlClient.MySqlConnection.GetSchema">
             <summary>
             Returns schema information for the data source of this <see cref="T:System.Data.Common.DbConnection"/>. 
@@ -3450,6 +3497,200 @@
             </summary>
             <param name="value">A MySqlRowUpdatedEventArgs that contains the event data. </param>
         </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataSet)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataSet">Dataset to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataTable)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataTable">Datatable to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataSet,System.String)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="srcTable">Source table</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataTable,System.Data.IDataReader)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataTable">Datatable to use</param>
+            <param name="dataReader">DataReader to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataTable,System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataTable">DataTable to use</param>
+            <param name="command">DbCommand to use</param>
+            <param name="behavior">Command Behavior</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Int32,System.Int32,System.Data.DataTable[])">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="startRecord">Start record</param>
+            <param name="maxRecords">Max records</param>
+            <param name="dataTables">DataTable[] to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataSet,System.Int32,System.Int32,System.String)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="startRecord">Start record</param>
+            <param name="maxRecords">Max records</param>
+            <param name="srcTable">Source table</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataSet,System.String,System.Data.IDataReader,System.Int32,System.Int32)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="srcTable">Source table</param>
+            <param name="dataReader">DataReader to use</param>
+            <param name="startRecord">Start record</param>
+            <param name="maxRecords">Max records</param>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataTable[],System.Int32,System.Int32,System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataTables">DataTable[] to use</param>
+            <param name="startRecord">Start record</param>
+            <param name="maxRecords">Max records</param>
+            <param name="command">DbCommand to use</param>
+            <param name="behavior">Command Behavior</param>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillAsync(System.Data.DataSet,System.Int32,System.Int32,System.String,System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Async version of Fill
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="startRecord">Start record</param>
+            <param name="maxRecords">Max records</param>
+            <param name="srcTable">Source table</param>
+            <param name="command">DbCommand to use</param>
+            <param name="behavior">Command Behavior</param>
+            <returns></returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataSet,System.Data.SchemaType)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="schemaType">Schema Type</param>
+            <returns>DataTable[]</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataSet,System.Data.SchemaType,System.String)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="schemaType">Schema Type</param>
+            <param name="srcTable">Source Table</param>
+            <returns>DataTable[]</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataSet,System.Data.SchemaType,System.String,System.Data.IDataReader)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="schemaType">Schema Type</param>
+            <param name="srcTable">Source Table</param>
+            <param name="dataReader">DataReader to use</param>
+            <returns>DataTable[]</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataSet,System.Data.SchemaType,System.Data.IDbCommand,System.String,System.Data.CommandBehavior)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="schemaType">Schema Type</param>
+            <param name="command">DBCommand to use</param>
+            <param name="srcTable">Source Table</param>
+            <param name="behavior">Command Behavior</param>
+            <returns>DataTable[]</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataTable,System.Data.SchemaType)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataTable">DataTable to use</param>
+            <param name="schemaType">Schema Type</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataTable,System.Data.SchemaType,System.Data.IDataReader)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataTable">DataTable to use</param>
+            <param name="schemaType">Schema Type</param>
+            <param name="dataReader">DataReader to use</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.FillSchemaAsync(System.Data.DataTable,System.Data.SchemaType,System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Async version of FillSchema
+            </summary>
+            <param name="dataTable">DataTable to use</param>
+            <param name="schemaType">Schema Type</param>
+            <param name="command">DBCommand to use</param>
+            <param name="behavior">Command Behavior</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateAsync(System.Data.DataRow[])">
+            <summary>
+            Async version of Update
+            </summary>
+            <param name="dataRows">DataRow[] to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateAsync(System.Data.DataSet)">
+            <summary>
+            Async version of Update
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateAsync(System.Data.DataTable)">
+            <summary>
+            Async version of Update
+            </summary>
+            <param name="dataTable">DataTable to use</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateAsync(System.Data.DataRow[],System.Data.Common.DataTableMapping)">
+            <summary>
+            Async version of Update
+            </summary>
+            <param name="dataRows">DataRow[] to use</param>
+            <param name="tableMapping">Data Table Mapping</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateAsync(System.Data.DataSet,System.String)">
+            <summary>
+            Async version of Update
+            </summary>
+            <param name="dataSet">DataSet to use</param>
+            <param name="srcTable">Source Table</param>
+            <returns></returns>
+        </member>
         <member name="T:MySql.Data.MySqlClient.MySqlRowUpdatingEventHandler">
             <summary>
             Represents the method that will handle the <see cref="E:MySql.Data.MySqlClient.MySqlDataAdapter.RowUpdating"/> event of a <see cref="T:MySql.Data.MySqlClient.MySqlDataAdapter"/>.
@@ -3659,7 +3900,7 @@
             <param name="bufferoffset">The index for buffer to begin the read operation. </param>
             <param name="length">The maximum length to copy into the buffer. </param>
             <returns>The actual number of bytes read.</returns>
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/MySqlDataReader.xml" path="MyDocs/MyMembers[@name=&quot;GetBytes&quot;]/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/MySqlDataReader.xml" path="MyDocs/MyMembers[@name=&quot;GetBytes&quot;]/*" />
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetChar(System.String)">
             <summary>
@@ -3843,10 +4084,10 @@
     </remarks><param name="i">The zero-based column ordinal.</param><returns>The value of the specified column.</returns>
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetGuid(System.String)">
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/MySqlDataReader.xml" path="docs/GetGuidS/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/MySqlDataReader.xml" path="docs/GetGuidS/*" />
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetGuid(System.Int32)">
-            <!--未找到下列包含标记的匹配元素 --><include file="docs/MySqlDataReader.xml" path="docs/GetGuid/*" />
+            <!-- No matching elements were found for the following include tag --><include file="docs/MySqlDataReader.xml" path="docs/GetGuid/*" />
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt16(System.String)">
             <summary>Gets the value of the specified column as a 16-bit signed integer.</summary><remarks>
@@ -5161,7 +5402,7 @@
             <param name="key"></param>
             <param name="value"></param>
         </member>
-        <!-- 对于成员“M:MySql.Data.MySqlClient.Memcached.BinaryClient.EncodeStoreCommand(System.Byte,System.Byte,System.String,System.Object,System.TimeSpan,System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "M:MySql.Data.MySqlClient.Memcached.BinaryClient.EncodeStoreCommand(System.Byte,System.Byte,System.String,System.Object,System.TimeSpan,System.Boolean)" -->
         <member name="T:MySql.Data.MySqlClient.Memcached.MemcachedException">
             <summary>
             The base exception class for all Memcached exceptions.
@@ -5172,8 +5413,8 @@
             Implementation of the Memcached text client protocol.
             </summary>
         </member>
-        <!-- 对于成员“M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Object,System.TimeSpan,System.UInt64)”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Object,System.TimeSpan)”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Object,System.TimeSpan,System.UInt64)" -->
+        <!-- Badly formed XML comment ignored for member "M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Object,System.TimeSpan)" -->
         <member name="M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Object)">
             <summary>
             Send a command to memcached server.
@@ -5192,8 +5433,8 @@
             <param name="key"></param>
             <remarks>This version is for commands that only require a key</remarks>
         </member>
-        <!-- 对于成员“M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Int32)”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.TimeSpan)”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.String,System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:MySql.Data.MySqlClient.Memcached.TextClient.SendCommand(System.String,System.TimeSpan)" -->
         <member name="T:MySql.Data.MySqlClient.Memcached.Client">
             <summary>
             An interface of the client memcached protocol. This class is abstract for 
@@ -8534,6 +8775,155 @@
             <param name="value">The string to escape</param>
             <returns>The string with all quotes escaped.</returns>
         </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataRowAsync(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteDataRow
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <param name="parms">Parameters to use for the command</param>
+            <returns>DataRow containing the first row of the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteNonQueryAsync(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteNonQuery
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use</param>
+            <param name="commandText">SQL command to be executed</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter"/> objects to use with the command.</param>
+            <returns>Rows affected</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteNonQueryAsync(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteNonQuery
+            </summary>
+            <param name="connectionString"><see cref="P:MySql.Data.MySqlClient.MySqlConnection.ConnectionString"/> to use</param>
+            <param name="commandText">SQL command to be executed</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter"/> objects to use with the command.</param>
+            <returns>Rows affected</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDatasetAsync(System.String,System.String)">
+            <summary>
+            Async version of ExecuteDataset
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <returns><see cref="T:System.Data.DataSet"/> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDatasetAsync(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteDataset
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns><see cref="T:System.Data.DataSet"/> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDatasetAsync(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Async version of ExecuteDataset
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use</param>
+            <param name="commandText">Command to execute</param>
+            <returns><see cref="T:System.Data.DataSet"/> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDatasetAsync(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteDataset
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use</param>
+            <param name="commandText">Command to execute</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns><see cref="T:System.Data.DataSet"/> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.UpdateDataSetAsync(System.String,System.String,System.Data.DataSet,System.String)">
+            <summary>
+            Async version of UpdateDataset
+            </summary>
+            <param name="connectionString">Settings to use for the update</param>
+            <param name="commandText">Command text to use for the update</param>
+            <param name="ds"><see cref="T:System.Data.DataSet"/> containing the new data to use in the update</param>
+            <param name="tablename">Tablename in the dataset to update</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReaderAsync(MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction,System.String,MySql.Data.MySqlClient.MySqlParameter[],System.Boolean)">
+            <summary>
+            Async version of ExecuteReader
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use for the command</param>
+            <param name="transaction"><see cref="T:MySql.Data.MySqlClient.MySqlTransaction"/> object to use for the command</param>
+            <param name="commandText">Command text to use</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter"/> objects to use with the command</param>
+            <param name="ExternalConn">True if the connection should be preserved, false if not</param>
+            <returns><see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReaderAsync(System.String,System.String)">
+            <summary>
+            Async version of ExecuteReader
+            </summary>
+            <param name="connectionString">Settings to use for this command</param>
+            <param name="commandText">Command text to use</param>
+            <returns><see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReaderAsync(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Async version of ExecuteReader
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use for the command</param>
+            <param name="commandText">Command text to use</param>
+            <returns><see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReaderAsync(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteReader
+            </summary>
+            <param name="connectionString">Settings to use for this command</param>
+            <param name="commandText">Command text to use</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter"/> objects to use with the command</param>
+            <returns><see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReaderAsync(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteReader
+            </summary>
+            <param name="connection">Connection to use for the command</param>
+            <param name="commandText">Command text to use</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter"/> objects to use with the command</param>
+            <returns><see cref="T:MySql.Data.MySqlClient.MySqlDataReader"/> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalarAsync(System.String,System.String)">
+            <summary>
+            Async version of ExecuteScalar
+            </summary>
+            <param name="connectionString">Settings to use for the update</param>
+            <param name="commandText">Command text to use for the update</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalarAsync(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteScalar
+            </summary>
+            <param name="connectionString">Settings to use for the command</param>
+            <param name="commandText">Command text to use for the command</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalarAsync(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Async version of ExecuteScalar
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use</param>
+            <param name="commandText">Command text to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalarAsync(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async version of ExecuteScalar
+            </summary>
+            <param name="connection"><see cref="T:MySql.Data.MySqlClient.MySqlConnection"/> object to use</param>
+            <param name="commandText">Command text to use for the command</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
         <member name="M:MySql.Data.MySqlClient.MySqlPacket.WriteInteger(System.Int64,System.Int32)">
             <summary>
             WriteInteger
@@ -8668,6 +9058,12 @@
             Executes this instance.
             </summary>
             <returns>The number of statements executed as part of the script.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.ExecuteAsync">
+            <summary>
+            Async version of Execute
+            </summary>
+            <returns>The number of statements executed as part of the script inside.</returns>
         </member>
         <member name="T:MySql.Data.MySqlClient.MySqlStatementExecutedEventHandler">
             <summary>
@@ -8833,7 +9229,7 @@
             Defines a Replication server in configuration file
             </summary>
         </member>
-        <!-- 对于成员“T:MySql.Data.MySqlClient.Replication.ReplicationManager”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "T:MySql.Data.MySqlClient.Replication.ReplicationManager" -->
         <member name="P:MySql.Data.MySqlClient.Replication.ReplicationManager.Groups">
             <summary>
             Returns Replication Server Group List
@@ -8984,6 +9380,13 @@
             This method can be overrided to implement a custom failover handling
             </summary>
             <param name="server">The failed server</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Replication.ReplicationServerGroup.HandleFailover(MySql.Data.MySqlClient.Replication.ReplicationServer,System.Exception)">
+            <summary>
+            Handles a failed connection to a server.
+            </summary>
+            <param name="server">The failed server</param>
+            <param name="exception">Exception that caused the failover</param>
         </member>
         <member name="M:MySql.Data.MySqlClient.ResultSet.GetOrdinal(System.String)">
             <summary>
@@ -9385,17 +9788,7 @@
             DETERMINISTIC
             DISTINCT
             DISTINCTROW
-            DIV
-            DO
-            DOUBLE
-            DROP
-            DUAL
-            EACH
-            ELSE
-            ELSEIF
-            ENCLOSED
-            END
-            ESC [rest of string was truncated]&quot;;.
+            D [rest of string was truncated]&quot;;.
              </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.Properties.Resources.MixedParameterNamingNotAllowed">

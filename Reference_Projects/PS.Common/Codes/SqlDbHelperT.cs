@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace PS
 {
@@ -637,6 +638,16 @@ namespace PS
             }
 
             return value;
+        }
+        protected virtual void ExecuteMySqlScript(string scriptPath)
+        {
+            FileInfo fileinfo = new FileInfo(scriptPath);
+            string sql = fileinfo.OpenText().ReadToEnd();
+            if (sql.Length > 0)
+            {
+                MySqlScript script = new MySqlScript(new MySqlConnection(ConnectionString), sql);
+                script.Execute();
+            }          
         }
         /// <summary>
         /// 返回当前连接的数据库中所有由用户创建的数据库

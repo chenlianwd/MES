@@ -43,22 +43,30 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.DAL.dll</HintPath>
     </Reference>
-    <Reference Include="AutoSolder.Model">
+    <Reference Include="AutoSolder.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\AutoSolder.Model.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus">
       <HintPath>..\..\PS.Web.Release\Bin\EPPlus.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PS.BLL">
+      <HintPath>..\..\PS.Web.Release\Bin\PS.BLL.dll</HintPath>
     </Reference>
     <Reference Include="PS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\PS.Web.Release\Bin\PS.Common.dll</HintPath>
     </Reference>
     <Reference Include="PS.DAL.MySql">
-      <HintPath>..\..\PS.Web.Release\Bin\PS.DAL.MySql.dll</HintPath>
+      <HintPath>..\PS.DAL.MySql\bin\Debug\PS.DAL.MySql.dll</HintPath>
     </Reference>
     <Reference Include="PS.Model">
       <HintPath>..\..\PS.Web.Release\Bin\PS.Model.dll</HintPath>
@@ -70,9 +78,13 @@
     <Reference Include="ReflowerTester">
       <HintPath>..\ReflowerTester\bin\Debug\ReflowerTester.dll</HintPath>
     </Reference>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.13, Culture=neutral, PublicKeyToken=ee9af13f57f00acc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SuperSocket.ClientEngine.Core.0.8.0.13\lib\net40-client\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,23 +93,13 @@
     <Reference Include="websocket-sharp.clone, Version=1.0.2.39869, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\websocket-sharp.clone.3.0.0\lib\net45\websocket-sharp.clone.dll</HintPath>
     </Reference>
-    <Reference Include="WebSocket4Net, Version=0.14.1.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\net40\WebSocket4Net.dll</HintPath>
+    <Reference Include="WebSocket4Net, Version=0.15.0.9, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebSocket4Net.0.15.0\lib\net40\WebSocket4Net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MySql\Source\MySql.Data\MySql.Data.csproj">
-      <Project>{E9DF5ED1-4CBD-4226-B931-9A51610AC14D}</Project>
-      <Name>MySql.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PS.BLL\PS.BLL.csproj">
-      <Project>{fc886f88-03fa-417b-ac44-210c914abc15}</Project>
-      <Name>PS.BLL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

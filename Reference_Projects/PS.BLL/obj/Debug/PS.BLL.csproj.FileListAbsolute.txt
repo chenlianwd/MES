@@ -63,3 +63,4 @@ E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Model.dll
 E:\program\Mes\Reference_Projects\PS.BLL\bin\Debug\PS.Model.pdb
 E:\program\Mes\PS.Web.Release\Bin\PS.BLL.dll
 E:\program\Mes\PS.Web.Release\Bin\PS.BLL.pdb
+E:\program\Mes\PS.Web.Release\Bin\PS.BLL.dll.config

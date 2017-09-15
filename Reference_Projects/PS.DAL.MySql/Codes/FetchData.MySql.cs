@@ -215,12 +215,31 @@ namespace PS
             }
             return true;
         }
-
+        
         public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
         {
-            throw new NotImplementedException();
-        }
+            //执行sql脚本创建新存储过程并删除旧的存储过程
+            //1、建表过程(暂时不包含base所属表)
+            ExecuteMySqlScript("CreateTablesProc.sql");
 
+            //2、插入数据过程
+
+
+
+
+            //执行
+            long row = ExecuteNonQueryReturnOutParameterValue("CreateTablesProc", CommandType.StoredProcedure, new MySqlParameter[] { new MySqlParameter(@"anaNums",baseprofile.ProcessAnaDataG.Count),new MySqlParameter(@"ovenNums",baseprofile.OvenInfoData.SegNum), new MySqlParameter(@"lineName", baseprofile.ProLine), new MySqlParameter(@"recipeName", recipename), new MySqlParameter(@"productName",baseprofile.ProName), new MySqlParameter(@"baseName", baseprofile.BaseName), new MySqlParameter(@"processName", baseprofile.ProcessTechName), new MySqlParameter(@"ovenName", baseprofile.OvenTechName), new MySqlParameter(@"startTime",baseprofile.StartTime), new MySqlParameter(@"eventFileName", recipename + @"_EventInfo"),new MySqlParameter(@"isControlcode", baseprofile.IsControlCode), new MySqlParameter(@"controlCode", baseprofile.ControlCode) });
+            if (!(row > 0))
+            {
+                return false;
+            }
+            return true;
+        }
+        /// <summary>
+        /// 每片板的数据
+        /// </summary>
+        /// <param name="recipeprofile"></param>
+        /// <returns></returns>
         public override bool InsertActualProfile(RecipeProfileDS recipeprofile)
         {
             throw new NotImplementedException();
@@ -236,7 +255,9 @@ namespace PS
             throw new NotImplementedException();
         }
 
+       
 
+        
 
 
         #endregion

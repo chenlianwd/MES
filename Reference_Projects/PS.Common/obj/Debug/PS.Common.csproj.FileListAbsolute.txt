@@ -41,3 +41,4 @@ E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Model.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Model.pdb
 E:\program\Mes\PS.Web.Release\Bin\PS.Common.dll
 E:\program\Mes\PS.Web.Release\Bin\PS.Common.pdb
+E:\program\Mes\PS.Web.Release\Bin\PS.Common.dll.config

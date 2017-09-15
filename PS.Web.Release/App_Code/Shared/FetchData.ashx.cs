@@ -336,9 +336,18 @@ public partial class FetchData : IHttpHandler, IRequiresSessionState
             dtStart = DateTime.Now;
         if(! DateTime.TryParse(context.Request["EndTime"],out dtEnd) )
             dtEnd = dtStart;
+        try
+        {
+            DataTable tbl = Common.DAL.GetPISData(nStationID, dtStart, dtEnd);
+            context.Response.Write(new LigerGridRows(tbl, "yyyy-MM-dd HH:mm:ss", "F2").ToJson());
+        }
+        catch (Exception e)
+        {
 
-        DataTable tbl = Common.DAL.GetPISData(nStationID, dtStart, dtEnd);
-        context.Response.Write(new LigerGridRows(tbl, "yyyy-MM-dd HH:mm:ss", "F2").ToJson());
+            throw;
+        }
+       
+       // context.Response.Write(new LigerGridRows(tbl, "yyyy-MM-dd HH:mm:ss", "F2").ToJson());
         
     }
 

@@ -15,6 +15,9 @@ E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.dll
 E:\program\Mes\Reference_Projects\PS.Common\obj\Release\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Reflow.dll
-E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.xml
 E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Reflow.pdb
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Common.dll.config
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Model.dll
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\PS.Model.pdb
+E:\program\Mes\Reference_Projects\PS.Common\bin\Release\MySql.Data.pdb

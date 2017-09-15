@@ -62,6 +62,7 @@
         
         function ShowAutoSolderValues()
         {
+            
             errorLable.innerText = "";
             $.ajax({
                 type:'post',

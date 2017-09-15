@@ -104,9 +104,10 @@ namespace PS
         }
         public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
         {
-            throw new NotImplementedException();
-        }
 
+            throw new NotImplementedException();
+           
+        }
         public override bool InsertActualProfile(RecipeProfileDS recipeprofile)
         {
             throw new NotImplementedException();
@@ -121,6 +122,7 @@ namespace PS
         {
             throw new NotImplementedException();
         }
+       
         #endregion
     }
 }

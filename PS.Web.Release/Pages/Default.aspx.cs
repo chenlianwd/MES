@@ -13,6 +13,7 @@ public partial class HomePage : BasePage
         //Common.DAL.Password = "Jhd84615789";
         //DAL dal = Common.DAL;
         //layout1.Controls.Remove(accordion1);
+
         return;
     }
 }

@@ -617,7 +617,7 @@ namespace PS
         protected virtual long ExecuteNonQueryReturnOutParameterValue(string commandText, CommandType commandType, DbParameter[] parameters)
         {
             long value = 0;
-            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            using (MySqlConnection connection = new MySqlConnection("datasource=localhost;username=root;password=pempenn;Database=ps;Port=3306;Allow User Variables=True"))
             {
                 using (MySqlCommand command = new MySqlCommand(commandText, connection))
                 {
@@ -642,6 +642,7 @@ namespace PS
         protected virtual void ExecuteMySqlScript(string scriptPath)
         {
             FileInfo fileinfo = new FileInfo(scriptPath);
+            
             string sql = fileinfo.OpenText().ReadToEnd();
             if (sql.Length > 0)
             {

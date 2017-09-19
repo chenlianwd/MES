@@ -22,6 +22,7 @@ using Newtonsoft.Json;
 using AutoSolder.Model;
 using Newtonsoft.Json.Linq;
 using System.Collections;
+using System.Drawing;
 //using System.Net.WebSockets;
 //using WebSocketSharp;
 
@@ -186,15 +187,43 @@ namespace testPrj
             //// string name1 = stuff1.Name;
             //Console.WriteLine(name);
             //Console.WriteLine(stuff1.Name);
-           
-            
-            
+            BaseProfileDS baseprofile = new BaseProfileDS();
+            string recipename = "rn1";
 
+            baseprofile.ReportImage = new Bitmap("pictureBox.png");
+
+            long row = ExecuteNonQueryReturnOutParameterValue("CreateTablesProc", CommandType.StoredProcedure, new MySqlParameter[] { new MySqlParameter(@"anaNums", baseprofile.ProcessAnaDataG.Count), new MySqlParameter(@"ovenNums", baseprofile.OvenInfoData.SegNum), new MySqlParameter(@"lineName", baseprofile.ProLine), new MySqlParameter(@"recipeName", recipename), new MySqlParameter(@"productName", baseprofile.ProName), new MySqlParameter(@"baseName", baseprofile.BaseName), new MySqlParameter(@"processName", baseprofile.ProcessTechName), new MySqlParameter(@"ovenName", baseprofile.OvenTechName), new MySqlParameter(@"startTime", baseprofile.StartTime), new MySqlParameter(@"eventFileName", recipename + @"_EventInfo"), new MySqlParameter(@"isControlcode", baseprofile.IsControlCode), new MySqlParameter(@"controlCode", baseprofile.ControlCode) });
+            Console.WriteLine(row);
             Console.ReadKey();
 
 
 
         }
+        protected static long ExecuteNonQueryReturnOutParameterValue(string commandText, CommandType commandType, DbParameter[] parameters)
+        {
+            long value = 0;
+            string ConnectionString = "datasource=localhost;username=root;password=pempenn;Database=ps;Port=3306;Allow User Variables=True";
+            using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(commandText, connection))
+                {
+                    command.CommandType = commandType;
+                    if (parameters != null)
+                    {
+                        foreach (DbParameter parameter in parameters)
+                        {
+                            command.Parameters.Add(parameter);
+                        }
+                    }
+                    connection.Open();
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        value = command.LastInsertedId;
+                    }
+                }
+            }
 
+            return value;
+        }
     }
 }

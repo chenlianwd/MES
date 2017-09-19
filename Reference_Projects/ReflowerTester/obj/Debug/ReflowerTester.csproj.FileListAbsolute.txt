@@ -25,9 +25,10 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\PS.Web.Release\Bin
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.csprojResolveAssemblyReference.cache
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.dll
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.pdb
-E:\program\Mes\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.csprojResolveAssemblyReference.cache
-E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.dll.config
 E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.dll
+E:\program\Mes\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.csproj.CoreCompileInputs.cache
+E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.dll.config
 E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.pdb
 E:\program\Mes\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.dll
 E:\program\Mes\Reference_Projects\ReflowerTester\obj\Debug\ReflowerTester.pdb

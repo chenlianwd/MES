@@ -8,3 +8,4 @@ E:\program\Mes\PS.Web.Release\Bin\PS.Model.dll
 E:\program\Mes\PS.Web.Release\Bin\PS.Model.pdb
 E:\program\Mes\Reference_Projects\PS.Model\obj\Debug\PS.Model.dll
 E:\program\Mes\Reference_Projects\PS.Model\obj\Debug\PS.Model.pdb
+E:\program\Mes\Reference_Projects\PS.Model\obj\Debug\PS.Model.csproj.CoreCompileInputs.cache

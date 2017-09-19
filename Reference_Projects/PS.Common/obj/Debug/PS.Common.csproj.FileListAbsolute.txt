@@ -30,15 +30,16 @@ E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects
 E:\BaiduNetdiskDownload\program\PS_src_2017-03-15 - forserver\Reference_Projects\PS.Common\obj\Debug\PS.Common.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Common.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Common.pdb
-E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.dll
-E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.pdb
-E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Reflow.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Reflow.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\MySql.Data.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\MySql.Data.pdb
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Model.dll
 E:\program\Mes\Reference_Projects\PS.Common\bin\Debug\PS.Model.pdb
+E:\program\Mes\PS.Web.Release\Bin\PS.Common.dll.config
 E:\program\Mes\PS.Web.Release\Bin\PS.Common.dll
 E:\program\Mes\PS.Web.Release\Bin\PS.Common.pdb
-E:\program\Mes\PS.Web.Release\Bin\PS.Common.dll.config
+E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.csproj.CoreCompileInputs.cache
+E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.dll
+E:\program\Mes\Reference_Projects\PS.Common\obj\Debug\PS.Common.pdb

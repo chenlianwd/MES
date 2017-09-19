@@ -7,6 +7,7 @@ using System.Diagnostics;
 using MySql.Data.MySqlClient;
 using AutoSolder.DAL;
 using PS.Reflow.Codes;
+using System.IO;
 
 namespace PS
 {
@@ -216,24 +217,24 @@ namespace PS
             return true;
         }
         
-        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
+        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime, string sPath)
         {
-            //执行sql脚本创建新存储过程并删除旧的存储过程
-            //1、建表过程(暂时不包含base所属表)
-            ExecuteMySqlScript("CreateTablesProc.sql");
+                //执行sql脚本创建新存储过程并删除旧的存储过程
+                //1、建表过程(暂时不包含base所属表)
+                //string sPath = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+                //sPath = Path.Combine(Path.Combine(sPath, "config"), "CreateTablesProc.sql");
+                ExecuteMySqlScript(sPath);
+
+
 
             //2、插入数据过程
 
-
-
-
             //执行
-            long row = ExecuteNonQueryReturnOutParameterValue("CreateTablesProc", CommandType.StoredProcedure, new MySqlParameter[] { new MySqlParameter(@"anaNums",baseprofile.ProcessAnaDataG.Count),new MySqlParameter(@"ovenNums",baseprofile.OvenInfoData.SegNum), new MySqlParameter(@"lineName", baseprofile.ProLine), new MySqlParameter(@"recipeName", recipename), new MySqlParameter(@"productName",baseprofile.ProName), new MySqlParameter(@"baseName", baseprofile.BaseName), new MySqlParameter(@"processName", baseprofile.ProcessTechName), new MySqlParameter(@"ovenName", baseprofile.OvenTechName), new MySqlParameter(@"startTime",baseprofile.StartTime), new MySqlParameter(@"eventFileName", recipename + @"_EventInfo"),new MySqlParameter(@"isControlcode", baseprofile.IsControlCode), new MySqlParameter(@"controlCode", baseprofile.ControlCode) });
-            if (!(row > 0))
-            {
-                return false;
-            }
+            long row = ExecuteNonQueryReturnOutParameterValue("CreateTablesProc", CommandType.StoredProcedure, new MySqlParameter[] { new MySqlParameter(@"anaNums", baseprofile.ProcessAnaDataG.Count), new MySqlParameter(@"ovenNums", baseprofile.OvenInfoData.SegNum), new MySqlParameter(@"lineName", baseprofile.ProLine), new MySqlParameter(@"recipeName", recipename), new MySqlParameter(@"productName", baseprofile.ProName), new MySqlParameter(@"baseName", baseprofile.BaseName), new MySqlParameter(@"processName", baseprofile.ProcessTechName), new MySqlParameter(@"ovenName", baseprofile.OvenTechName), new MySqlParameter(@"startTime", baseprofile.StartTime), new MySqlParameter(@"eventFileName", recipename + @"_EventInfo"), new MySqlParameter(@"isControlcode", baseprofile.IsControlCode), new MySqlParameter(@"controlCode", baseprofile.ControlCode) });
+            //long row = ExecuteNonQueryReturnOutParameterValue("CreateTablesProc", CommandType.StoredProcedure, new MySqlParameter[] { new MySqlParameter(@"anaNums", 12), new MySqlParameter(@"ovenNums", 7), new MySqlParameter(@"lineName", "test"), new MySqlParameter(@"recipeName", "recipe1"), new MySqlParameter(@"productName", "pro1"), new MySqlParameter(@"baseName", "base1"), new MySqlParameter(@"processName", "pro1"), new MySqlParameter(@"ovenName", "oven1"), new MySqlParameter(@"startTime", baseprofile.StartTime), new MySqlParameter(@"eventFileName", "recipe1" + @"_EventInfo"), new MySqlParameter(@"isControlcode", 0), new MySqlParameter(@"controlCode", "1") });
             return true;
+            
+            
         }
         /// <summary>
         /// 每片板的数据

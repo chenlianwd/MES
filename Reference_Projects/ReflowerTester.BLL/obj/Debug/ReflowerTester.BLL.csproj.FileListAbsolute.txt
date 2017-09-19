@@ -11,3 +11,4 @@ E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.BLL.dll
 E:\program\Mes\PS.Web.Release\Bin\ReflowerTester.BLL.pdb
 E:\program\Mes\Reference_Projects\ReflowerTester.BLL\obj\Debug\ReflowerTester.BLL.dll
 E:\program\Mes\Reference_Projects\ReflowerTester.BLL\obj\Debug\ReflowerTester.BLL.pdb
+E:\program\Mes\Reference_Projects\ReflowerTester.BLL\obj\Debug\ReflowerTester.BLL.csproj.CoreCompileInputs.cache

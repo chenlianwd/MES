@@ -49,54 +49,9 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
                     break;
               
             }
-            #region before
+           
 
-
-            /*
-                       PISModel PisModel = new PISModel();
-                       PisModel.ProLine = context.Request["ProLine"];
-                       PisModel.SN = context.Request["SN"];
-                       PisModel.Model = context.Request["Model"];
-                       PisModel.StartTime = Convert.ToDateTime(context.Request["StartTime"]);
-                       PisModel.EndTime = Convert.ToDateTime(context.Request["EndTime"]);
-                       PisModel.Flag = context.Request["Flag"];
-                       PisModel.CPK = Convert.ToDouble(context.Request["CPK"]);
-                       PisModel.Result = context.Request["Result"];
-                       PisModel.DateNo = Convert.ToDateTime(context.Request["DateNo"]);
-                       PisModel.HourNo = Convert.ToDateTime(context.Request["HourNo"]);
-                       PisModel.LineNo = context.Request["LineNo"];
-                       PisModel.TheSN = context.Request["TheSN"];
-                       PisModel.PISFileName = context.Request["PISFileName"];
-
-                       StringBuilder pisFileName = new StringBuilder(context.Request["PISFileName"]);
-                       StringBuilder proLine = new StringBuilder(context.Request["ProLine"]);
-                       foreach (char rInvaildChar in Path.GetInvalidFileNameChars())
-                       {
-                           pisFileName.Replace(rInvaildChar.ToString(), string.Empty);
-                           proLine.Replace(rInvaildChar.ToString(), string.Empty);
-                       }
-                       PisModel.ProLine = proLine.ToString();
-                       PisModel.PISFileName = pisFileName.ToString();          
-                       long row = 0;
-                       bool f = Common.DAL.InsertPISData(PisModel, out row);            
-                       if (!f)
-                       {
-                           context.Response.Write(new JavaScriptSerializer().Serialize(new { StatusCode = "fail on insert data" }));
-                           return;
-                       }
-                       var files = context.Request.Files;
-
-                       var strs = files[0].FileName.Split('.');
-                       var path = context.Request.PhysicalApplicationPath + @"upload/pispdfinfo/" + PisModel.ProLine + @"/";
-                       if (!Directory.Exists(path))
-                       {
-                           Directory.CreateDirectory(path);
-                       }
-                       string fileName = path + row + "." + strs[1].ToLower();
-                       files[0].SaveAs(fileName);
-                       context.Response.Write(new JavaScriptSerializer().Serialize(new { StatusCode = "success" }));
-            */
-            #endregion
+           
 
         }
         catch (Exception err)
@@ -135,38 +90,38 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
 
     private void AddRecipeCollectProfile(HttpContext context)
     {
-
+        
+        var sPath = context.Request.PhysicalApplicationPath + @"config\CreateTablesProc.sql";
         string json = ParseToJson(context);
-        PostRecipeDataClass responseobj = JsonConvert.DeserializeObject<PostRecipeDataClass>(json);
+        PostRecipeDataClass responseobj = JsonConvert.DeserializeObject<PostRecipeDataClass>(json);       
         Image Img = Common.Base64StringToImage(responseobj.ImgData);
-
-        //测试完毕，数据库操作待写
-        var path = context.Request.PhysicalApplicationPath + @"upload/RecipeProfiles/" + responseobj.baseprofile.ProLine + "/" + responseobj.baseprofile.ProName + "/";
+        if (responseobj.BaseProfileDS.ProLine == "" || responseobj.BaseProfileDS.ProName == "" || responseobj.BaseProfileDS.BaseName == "")
+        {
+            context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success", ErrorMsg = "BaseProfileDS参数Proline、ProName、BaseName不能为空"}));
+        }
+        var path = context.Request.PhysicalApplicationPath + @"upload\RecipeProfiles\" + responseobj.BaseProfileDS.ProLine + @"\" + responseobj.BaseProfileDS.ProName + @"\";
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
         }
-        string fileName = path + responseobj.baseprofile.BaseName + ".png";
+        string fileName = path + responseobj.BaseProfileDS.BaseName + ".png";
+       
         Img.Save(fileName);
+              
         //File.WriteAllText("D://test.txt", responseobj.StartTime.ToString());
-        context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success"}));
+        bool result = Common.DAL.InsertRecipeCollectProfile(responseobj.BaseProfileDS, responseobj.RecipeName, responseobj.StartTime, sPath);
+        if (result == false)
+        {
+            context.Response.Write(new JavaScriptSerializer().Serialize(new tagErrMsg("插入数据失败")));
+        }
+        else
+        {
+            context.Response.Write(JsonConvert.SerializeObject(new { StatusCode = "success" }));
+        }
+       
 
 
-        //string BaseProfileDSStr =  context.Request["BaseProfileDS"];
-        //string RecipeNameStr = context.Request["RecipeName"];
-
-        //DateTime DtStartTime;
-        //DateTime.TryParse(context.Request["StartTime"], out DtStartTime);
-
-        //string base64Str = context.Request["ImgData"];
-
-        //BaseProfileDS bpDS = JsonConvert.DeserializeObject<BaseProfileDS>(BaseProfileDSStr);
-
-        ////测试
-        //var responsestr = new { BaseProfileDS = BaseProfileDSStr, RecipeName = RecipeNameStr, StartTime = DtStartTime, ImhData = base64Str };
-
-        //context.Response.Write(JsonConvert.SerializeObject(responsestr));
-        //存入数据库
+        
     }
     private string ParseToJson(HttpContext context)
     {
@@ -200,7 +155,7 @@ public class PISUpload : IHttpHandler, IRequiresSessionState
         public string RecipeName { get; set; }
         public DateTime StartTime { get; set; }
         public string ImgData { get; set; }
-        public BaseProfileDS baseprofile { get; set; }
+        public BaseProfileDS BaseProfileDS { get; set; }
 
     }
 

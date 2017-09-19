@@ -25,3 +25,5 @@ E:\program\Mes\PS.Web.Release\Bin\AutoSolder.BLL.dll
 E:\program\Mes\PS.Web.Release\Bin\AutoSolder.BLL.pdb
 E:\program\Mes\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.dll
 E:\program\Mes\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.pdb
+E:\program\Mes\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.csprojResolveAssemblyReference.cache
+E:\program\Mes\Reference_Projects\AutoSolder.BLL\obj\Debug\AutoSolder.BLL.csproj.CoreCompileInputs.cache

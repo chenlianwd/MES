@@ -48,5 +48,6 @@ E:\program\Mes\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.dll
 E:\program\Mes\Reference_Projects\MySql\PS.Web.Release\Bin\MySql.Data.pdb
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.MySqlClient.Properties.Resources.resources
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.GenerateResource.Cache
+E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.csproj.CoreCompileInputs.cache
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.dll
 E:\program\Mes\Reference_Projects\MySql\Source\MySql.Data\obj\v4.0\MySql.Data.pdb

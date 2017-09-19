@@ -49,3 +49,4 @@ E:\program\Mes\PS.Web.Release\Bin\PS.DAL.SqlServer.pdb
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csprojResolveAssemblyReference.cache
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.dll
 E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.pdb
+E:\program\Mes\Reference_Projects\PS.DAL.SqlServer\obj\Debug\PS.DAL.SqlServer.csproj.CoreCompileInputs.cache

@@ -102,7 +102,7 @@ namespace PS
             row = 0;
             return true;
         }
-        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime)
+        public override bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime, string sPath)
         {
 
             throw new NotImplementedException();

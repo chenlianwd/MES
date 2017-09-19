@@ -89,9 +89,9 @@ public class ClientUpload:IHttpHandler, IRequiresSessionState
             }
 
             //数据库操作
-            RTDBOperation Rtdb = new RTDBOperation();
-            Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable");
-            //context.Response.Write(Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable"));
+            //RTDBOperation Rtdb = new RTDBOperation();
+           // Rtdb.AddReflowerTesterProfile(RTProfile, "RTHostTable");
+            
             context.Response.Write(new JavaScriptSerializer().Serialize(new { StatusCode = "success", profile = RTProfile }));
         }
         catch (Exception err)

@@ -222,7 +222,7 @@ namespace PS
         /// </summary>
         /// <param name="BaseProfile"></param>
         /// <returns></returns>
-        public abstract bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime);
+        public abstract bool InsertRecipeCollectProfile(BaseProfileDS baseprofile, string recipename, DateTime Starttime, string sPath);
 
         public abstract bool InsertActualProfile(RecipeProfileDS recipeprofile);
 

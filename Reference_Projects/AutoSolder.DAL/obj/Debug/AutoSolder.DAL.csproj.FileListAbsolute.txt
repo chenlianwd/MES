@@ -37,3 +37,4 @@ E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.csproj
 E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.dll
 E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.pdb
 E:\program\Mes\PS.Web.Release\Bin\AutoSolder.DAL.dll.config
+E:\program\Mes\Reference_Projects\AutoSolder.DAL\obj\Debug\AutoSolder.DAL.csproj.CoreCompileInputs.cache
